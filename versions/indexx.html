@@ -1,0 +1,396 @@
+<DOCTYPE html> 
+<html> 
+  <head>
+    <title>Seven Arts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Font/css/bebas-neue.css">
+    <link rel="stylesheet" type="text/css" href="Font/css/bebas-neue.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+  <style>
+  	body{
+  		margin: 0;
+  		padding: 0;
+
+  	}
+  	h1{
+  		font-family: 'Bebas Neue', sans-serif;
+  		font-weight: 800;
+    	font-size: 45px;
+  	}
+  	p{
+  		font-family: 'Roboto Condensed', sans-serif;
+
+  	}
+  	/* Navbar */
+  	#navbar {
+  		transition: top 0.2s ease-in-out;
+  		background-color: rgba(30, 30, 30, 0.85);
+	    font-family: 'Roboto Condensed', sans-serif;
+	    font-weight: 300;
+	    font-size: 20px;
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    /* background-color: #3333336e; */
+	    position: fixed;
+	    z-index: 15;
+	    height: 55px;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 17px 17px;
+        transition: 0.4s;
+  		color: #ffffff;
+  		font-size: 20px;
+  		text-decoration: none;
+  		margin: 0 10px;
+		 
+    }
+    li a:hover {
+      	 background-color: #ffffff;
+  		 color: #EEA200;
+    }
+    .lg{
+        width: 7%;
+        float: left;
+        padding-right: 7px;
+        padding-left: 13px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .active {
+          background-color: #4CAF50;
+    }
+/* Primeira Seção*/
+  	.parallax {
+	    /* The image used */
+	    background-image: url("images/bg1.jpg");
+
+	    /* Set a specific height */
+	    min-height: 800px; 
+
+	    /* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    text-align: center;
+	    padding-top: 50px;
+	    display: none;
+  		text-align: center;
+
+	}
+	
+  	#l1{
+  		width: 60%;
+  		position: center;
+  		padding-top: 100px;
+  	}
+  	.s1 {
+  		text-align: center;
+  		height: 800px;
+  		background-image: url(images/bg1.jpg);
+  		background-size: cover;
+  		padding: 80px;
+    	padding-bottom: 10px;
+    	font-family: 'Bebas Neue', sans-serif;
+  	}
+  	.s2{
+  		text-align: center;
+  		margin: 20px;
+  	}
+  	.s3 {
+  		text-align: center;
+  		padding: 0;
+  	}
+  	#d1{
+  		background-color: #e52614;
+	    height: 455.75px;
+	    padding-top: 0px;
+	    padding-bottom: 1px;
+	    text-align: center;
+	    width: 100%;
+
+  	}
+  	#d1 p {
+  		color: #fff;
+  		text-align: justify;
+  		font-size: 25px;
+  		margin: 20px;
+    	padding: 160px;
+  	}
+  	#d2{
+  		height: 455.75px;
+	    padding-top: 1px;
+	    padding-bottom: 1px;
+	    margin: 0;
+	    background-color: #31d9fe;
+	    text-align: center;
+	    width: 100%;
+
+
+  	}
+  	#d2 p {
+  		color: #fff;
+  		text-align: justify;
+  		font-size: 25px;
+  		margin: 20px;
+    	padding: 160px;
+  	}
+  	#d3{
+  		background-color: #00e676;
+	    height: 455.75px;
+	    padding-top: 1px;
+	    padding-bottom: 0px;
+	    text-align: center;
+	    width: 100%;
+
+  	}
+  	#d3 p {
+  		color: #fff;
+  		text-align: justify;
+  		font-size: 25px;
+  		margin: 20px;
+    	padding: 160px;
+  	}
+  	#i1{
+  		float: left;
+  		width: 30%;
+  		padding-right: 20px;
+  	}
+  	#i2{
+  		float: right;
+  		width: 30%;
+  		padding-left: 20px;
+  	}
+  	.s4{
+  		background-color: 
+  	}
+  	/* Final + Rodapé */
+  	footer{
+  		background-color: #333;
+  		color: #fff;
+  		height: 40px;
+  		text-align: center;
+  		border-top: 4px solid #79aaf7;
+  	}
+  	.parallax2 {
+	    /* The image used */
+	    background-image: url("https://1.bp.blogspot.com/-v_UxEg93lTo/WVbd9r_qIjI/AAAAAAAATGA/Jfj6hqGiqlMYJ8yDwky3kWIdu_FwHKKqACLcBGAs/s1600/defoque.png");
+
+	    /* Set a specific height */
+	    min-height: 100px; 
+
+	    /* Create the parallax scrolling effect */
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    text-align: center;
+	    
+	  
+	}
+	.parallax2 h1{
+		border: 2px solid #FFFFFF;
+	    padding: 20px 90px;
+	    font-weight: bold;
+	    line-height: 90px;
+	    font-size: 100px;
+	    text-transform: uppercase;
+	    display: inline-block;
+	    color: #fff;
+	}
+	.ball {
+  	position: absolute;
+  	border-radius: 100%;
+  	opacity: 0.7;
+	}
+	/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+#animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+  </style>
+  <body onload="myFunction()" style="margin:0;">
+  	<div id="loader"></div>
+  	<ul id="navbar">
+     <a href="index.html"> <img class="lg" src="https://3.bp.blogspot.com/-CX8hTY7487A/WgCVDqcR8tI/AAAAAAAAg40/XZuGirGfANoa4engYauJ8AuN03c4zhvogCLcBGAs/s1600/lg.png"></a>
+      <li><a href="got.html">Home</a></li>
+      <li><a href="#a1">Artigos</a></li>
+      <li><a href="#a2">Sobre nós</a></li>
+      <li><a href="#a3">Selos</a></li>   
+    </ul>
+  	<section id="animate-bottom" style="display:none;" class="parallax">
+    <img id="l1" src="images/logo.png">
+  	</section>
+  	<section class="s2">
+	    <h1>Sobre o Seven Arts</h1>
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim vel ante ac luctus. Nam congue nulla ac libero scelerisque, non fringilla orci consectetur. Donec at maximus enim. Morbi at tortor vitae sapien lacinia venenatis sed non felis. Aliquam fringilla tristique lectus, eget aliquam erat dictum et. Nunc id purus ut mi tempor maximus. Nullam eget molestie lacus, mattis consectetur tellus. Mauris rutrum nisl non felis elementum volutpat non nec ante. Sed interdum elementum tristique. Nam ultricies pulvinar magna non tincidunt. Nam sollicitudin massa fermentum ultrices scelerisque. Aenean rhoncus dignissim purus in sagittis.</p>
+  	</section>
+  	<section class="s3">
+	  	<h1>Artigos feito por nós</h1>	
+
+	  	<div id="d1">
+		  	<img id= "i1" src="images/i1.png">
+		  	<p>Nosso Hobbies sempre foi jogar, para muitos é apenas uma diversão passageira para se livrar do mundo real e ir para outro totalmente diferente, para nós, é algo muito maior, misturando a arte, a direção e a história, juntas torna o jogo uma obra de arte que deve ser apreciada, nestes artigos você irá conhecer alguns jogos, jogados por nós e o que achamos dele.</p>
+	  	</div>
+	  	
+	  	<div id="d2">
+		  	<img id= "i2" src="images/i2.png">
+		  	<p>Da Arte de resenhar, escrever veio em conjunto. Historias criada por nós, poderão ser lidas gratuitamente, com gêneros diversos, sempre focando um pouco no mistério da vida, nossos E-Books poderão ser acessados e lidos a qualquer momento. Por tempo, estamos com poucos na seção, logo em breve nos livros digitais estarão disponíveis.</p>
+	  	</div>
+	  	<div id="d3">
+		  	<img id= "i1" src="images/i3.png">
+		  	<p>Imaginar um cenário no qual não podemos ter pelos desenvolvedores já está no passado, atualmente vários fãs árduos que conseguem modelar e assim redenrizar seus próprios modelos e como consequência cria uma pela fanart, veja algumas das nossas fanarts!.</p>
+	  	</div>
+	  	
+  	</section>
+  	<section class="s4">
+  		<h1>Jornada</h1>
+  		<p>Para chegar ao Seven Arts foi necessario varios blogs, com bases diferentes, mas a mesma proposta, entreterimento e leitura sobre tecnologia e jogos! Veja abaixo nossos passos até finalmente chegar na Sétima Arte.</p>
+  	</section>
+  	<section class="s5">
+  		<h1>Selos</h1>
+  	</section>
+  	<section class="s6">
+  		<h1>Criadores</h1>
+  	</section>
+  	<footer>
+    </footer>
+    <section class="parallax2">
+	    <h1>Seven Arts </h1>
+  	</section>
+  	<script type="text/javascript">
+  		var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+
+
+
+
+
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+	    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 20) {
+	        document.getElementById("navbar").style.top = "0";
+	    } else {
+	        document.getElementById("navbar").style.top = "-50px";
+	    }
+		}
+
+
+
+
+
+		// Some random colors
+		const colors = ["#44279E", "#C52A1C", "#80D8FF", "#7AB340", "#F29210"];
+
+		const numBalls = 50;
+		const balls = [];
+
+		for (let i = 0; i < numBalls; i++) {
+		  let ball = document.createElement("div");
+		  ball.classList.add("ball");
+		  ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+		  ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+		  ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+		  ball.style.transform = `scale(${Math.random()})`;
+		  ball.style.width = `${Math.random()}em`;
+		  ball.style.height = ball.style.width;
+		  
+		  balls.push(ball);
+		  document.body.append(ball);
+		}
+
+		// Keyframes
+		balls.forEach((el, i, ra) => {
+		  let to = {
+		    x: Math.random() * (i % 2 === 0 ? -11 : 11),
+		    y: Math.random() * 12
+		  };
+
+		  let anim = el.animate(
+		    [
+		      { transform: "translate(0, 0)" },
+		      { transform: `translate(${to.x}rem, ${to.y}rem)` }
+		    ],
+		    {
+		      duration: (Math.random() + 1) * 2000, // random duration
+		      direction: "alternate",
+		      fill: "both",
+		      iterations: Infinity,
+		      easing: "ease-in-out"
+		    }
+		  );
+		});
+
+  	</script>
+  </body>
+</html>

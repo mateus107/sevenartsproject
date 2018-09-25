@@ -1,0 +1,401 @@
+<DOCTYPE html> 
+<html> 
+  <head>
+    <title>Seven Arts - Writing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script src="js/lib/greensock/TweenMax.min.js"></script>
+    <script src="js/lib/greensock/plugins/ScrollToPlugin.min.js"></script> 
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/modernizr.custom.min.js"></script>
+    <script src="js/lib/iscroll-probe.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="js/sm.js"></script>
+    <link rel="stylesheet" type="text/css" href="Font/css/bebas-neue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script type="text/javascript" src="src/basic.js"></script>  
+      <!-- Audio Player CSS & Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+  <!-- end Audio Player CSS & Scripts -->
+
+    <style>
+    body{
+        margin: 0;
+        background: #455A64;
+    }
+    h1{
+        margin: auto;
+    }
+    .box{ 
+        padding: 0px;
+     }
+    .box{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    #navbar{
+        background-color: rgba(229, 37, 21, 0.85);
+    }
+    .parallax{
+      background-color: linear-gradient(73deg, #ff9300ab, #00e76eab, #e52515ab, #4b22a2ab, #31d9ffab);
+      background-size: 1007% 100%;
+      -webkit-animation: news 31s ease infinite;
+      -moz-animation: news 31s ease infinite;
+      animation: news 31s ease infinite;
+      padding: 20px;
+      width:100%;    
+      
+      top: 10%;
+      color: #fff;
+      -webkit-box-shadow: -2px 2px 85px -19px rgba(0,0,0,0.55);
+      -moz-box-shadow: -2px 2px 85px -19px rgba(0,0,0,0.55);
+      box-shadow: -2px 35px 85px -19px rgba(0,0,0,0.55);
+    }
+    @-webkit-keyframes news {
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+    @-moz-keyframes news {
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+    @keyframes news { 
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+    }
+    .parallax2{
+        height: 200px;
+        
+        padding: 20px;
+    }
+    footer{
+        border-top: 4px solid #7b83d6;
+    }
+    .lg{
+      width: 7%;
+      float: left;
+      padding-right: 7px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-top: 10px;
+    }
+    .s2{
+      background-image:url("images/bg2.png");
+      background-size: cover;
+      margin: auto;
+      text-align: center;
+      /* margin-top: 20px; */
+      height: 1000px;
+      padding: 0;
+      opacity: 0;
+      transform: translateY(70px);
+      transition: all 1s ease-out;
+      color: #fff;
+
+    }
+    .s2.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /*  seção scroll */
+    .box1{
+      float: left;
+      width: 33.33%;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-bottom: 70px;
+      color: #fff;
+      opacity: 0.7;
+      height: 850px;
+    }
+    .box1:hover{
+      
+      transition: all 1s; 
+      color: #fff;
+      opacity: 1;
+      background-color: #f8f8f8; 
+
+    }
+    .box1 img{
+      max-width: 450px;
+      width: 500px;
+      float: left;
+      padding-left: 5px;
+      margin-left: 30px;
+      -webkit-transform: rotate(20deg) scale(1.0);
+      transform: rotate(20deg) scale(1.0);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    .box1:hover img{
+      -webkit-transform: rotate(0) scale(1);
+      transform: rotate(0) scale(1);
+
+    }
+
+    
+    .box1 p{
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+
+    .box1 p{
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .box{
+      float: left;
+      width: 100%;
+      padding: 20px;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-bottom: 70px;
+      color: #fff;
+      opacity: 0.7;
+    }
+    .box img{
+      width: 500px;
+      float: left;
+      padding-right: 90px;
+      -webkit-transform: rotate(20deg) scale(1.0);
+      transform: rotate(20deg) scale(1.0);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+
+    }
+    .box:hover img{
+      -webkit-transform: rotate(0) scale(1);
+      transform: rotate(0) scale(1);
+
+    }
+    .box:hover{
+      transition: all 1s; 
+      color: #fff;
+      opacity: 1;
+      
+    }
+    .box p{
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    /* selos slides */
+    .prev2, .next2 {
+      cursor: pointer;
+      position: absolute;
+      top: 30%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      background-color: #f4511e;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      opacity: 1;
+    }
+
+    .prev2:hover{
+      transition: all 0.5s; 
+
+    }
+    .next2:hover{
+      transition: all 0.5s; 
+      
+    }
+    /* selos slidest */
+    .next2 {
+      right: 0;
+    }
+    .prev2{
+      left: 0;
+    }
+
+    /* selos slidesh */
+    .prev2:hover, .next2:hover {
+      background-color: rgba(236, 91, 46, 0.78);
+    }
+    .news{
+      font-family: "Roboto Condensed", sans-serif; 
+      background: linear-gradient(73deg, #ff9300ab, #00e76eab, #e52515ab, #4b22a2ab, #31d9ffab);
+      background-size: 1000% 1000%;
+      -webkit-animation: news 31s ease infinite;
+      -moz-animation: news 31s ease infinite;
+      animation: news 31s ease infinite;
+      padding: 20px;
+      width:100%;    
+      
+      top: 10%;
+      color: #fff;
+      -webkit-box-shadow: -2px 2px 85px -19px rgba(0,0,0,0.55);
+      -moz-box-shadow: -2px 2px 85px -19px rgba(0,0,0,0.55);
+      box-shadow: -2px 35px 85px -19px rgba(0,0,0,0.55);
+    }
+    @-webkit-keyframes news {
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+    @-moz-keyframes news {
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+    @keyframes news { 
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+     /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+ 
+    </style>
+  <body>
+    <ul id="navbar" class="news" style="top: -50px;">
+     <a href="index.html"> <img class="lg" src="https://3.bp.blogspot.com/-CX8hTY7487A/WgCVDqcR8tI/AAAAAAAAg40/XZuGirGfANoa4engYauJ8AuN03c4zhvogCLcBGAs/s1600/lg.png"></a>
+      <li><a href="#l1">Home</a></li>
+      <li><a href="selos.html">Selos</a></li>  
+    </ul>
+    <section class="parallax">
+    <img id="l1" src="images/logo.png">
+    <div class='icon-scroll'><div/>    </section>
+
+   <section id="project01" class="s2">
+      <h1 style="font-size: 70px;">Selos</h1>
+      
+      <!--Seção de Slides de Selos-->
+      <!--selos 1-->
+      <div class="slideshow-container">
+        <div class="mySlides2 fade"> 
+          <div style="background-color: #e5251542;" class="box1">
+            <img src="images/selos/Writing.png">
+            <h1>Writing</h1>
+            <p>There's no faster way to learn to build responsive sites and apps with Foundation. You'll learn how to get started, Foundation's XY grid, time saving UI components and best practices, as well as using and customizing Foundation's JavaScript helpers.</p>
+            <a href="writing.html"><button class="button2">Learn More</button></a>
+          </div>
+          <div style="background-color: #00e76e42;" class="box1">
+            <img src="images/selos/Studio.png">
+            <h1>Studio</h1>
+            <p>Take your skills to the next level and impress your co-workers with Advanced Foundation. You'll come away with advanced XY Grid skills, how to amplify your skills using Sass, ZURB's build system to automate tasks, and advanced JavaScript customizations.</p>
+            <button class="button2">Learn More</button>
+          </div>
+          <div style="background-color: #ff930042;" class="box1">
+            <img src="images/selos/Tech.png">
+            <h1>Tech</h1>
+            <p>Foundation certification shows that you understand responsive design and validates your coding skills with this public accreditation. Foundation Certification will help you become more marketable, get hired faster, and promote yourself.</p>
+            <button class="button2">Learn More</button>
+          </div>   
+        </div>  
+        <!--selos 2-->
+        <div class="mySlides2 fade" id="hid" style="display: none;">
+          <div style="background-color: #4b22a242;" class="box1">
+            <img src="images/selos/Photography.png">
+            <h1>Photography</h1>
+            <p>There's no faster way to learn to build responsive sites and apps with Foundation. You'll learn how to get started, Foundation's XY grid, time saving UI components and best practices, as well as using and customizing Foundation's JavaScript helpers.</p>
+            <a href="photography.html"><button class="button2">Learn More</button></a>
+          </div>
+          <div style="background-color: #56b43042;" class="box1">
+            <img src="images/selos/Create.png">
+            <h1>Create</h1>
+            <p>Take your skills to the next level and impress your co-workers with Advanced Foundation. You'll come away with advanced XY Grid skills, how to amplify your skills using Sass, ZURB's build system to automate tasks, and advanced JavaScript customizations.</p>
+            <button class="button2">Learn More</button>
+          </div>
+          <div style="background-color: #ffd82142;" class="box1">
+            <img href="music.html" src="images/selos/Music.png">
+            <h1>Music</h1>
+            <p>Foundation certification shows that you understand responsive design and validates your coding skills with this public accreditation. Foundation Certification will help you become more marketable, get hired faster, and promote yourself.</p>
+            <a href="music.html"><button class="button2">Learn More</button></a>
+          </div>   
+        </div>  
+        <!--selos 3-->
+        <div class="mySlides2 fade" id="hid" style="display: none;">
+          <div style="background-color: #31d9ff42;" class="box" style="">
+            <img src="images/selos/EBooks.png">
+            <h1>E-Books</h1>
+            <p>There's no faster way to learn to build responsive sites and apps with Foundation. You'll learn how to get started, Foundation's XY grid, time saving UI components and best practices, as well as using and customizing Foundation's JavaScript helpers.</p>
+            <button class="button2">Learn More</button>
+          </div>
+         </div> 
+        <!--Seção de Slides de Selos-->
+        <button class="next2" onclick="plusDivss(1)">&#10095;</button>
+        <button class="prev2" onclick="plusDivss(-1)">&#10094;</button>
+      </div>   
+      <div style="clear: both"></div>
+    </section>
+
+    <footer>
+    </footer>
+    
+    <section class="parallax2">
+        <h1>Seven Arts </h1>
+    </section>
+</body> 
+
+<script type="text/javascript">
+  scrollFunction();
+          var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+    
+      function plusDivss(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides2");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+
+</script>  

@@ -1,0 +1,236 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"f",
+				"font-style"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"background-n",
+				"background-position"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"transiti",
+				"transition-delay"
+			],
+			[
+				"wd",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Matt Silva/Documents/Disco D/TCC/Index/css/basic.js.erb",
+		"/C/Users/Matt Silva/Documents/Disco D/TCC/Index/css/SevenOmega.css",
+		"/C/Users/Matt Silva/Documents/Disco D/TCC/Index/indexteste.html",
+		"/C/Users/Matt Silva/Documents/Disco D/TCC/Index - Inicio/index.html",
+		"/C/Users/Matt Silva/Desktop/Nova pasta (2)/Game of Thrones/got.html",
+		"/C/Users/Matt Silva/Documents/Disco D/TCC/Index - Inicio/indexx.html",
+		"/C/Users/Matt Silva/Desktop/projetoexemplo-master (1)/projetoexemplo-master/got.html",
+		"/C/Users/Matt Silva/Downloads/projetoexemplo-master/projetoexemplo-master/got.html",
+		"/C/Users/Matt Silva/Downloads/projetoexemplo-master/projetoexemplo-master/script.js",
+		"/C/Users/Matt Silva/Downloads/ProjetoMateus-Neto-master/ProjetoMateus-Neto-master/Got/got.html",
+		"/C/Users/Matt Silva/Desktop/SEVEN ART HOME Alpha V2.html",
+		"/C/Users/Matt Silva/Desktop/Game of Thrones/style.css",
+		"/C/Users/Matt Silva/Desktop/Game of Thrones/got.html",
+		"/C/Users/Matt Silva/Desktop/script.js",
+		"/C/Users/Matt Silva/Desktop/style.css",
+		"/C/Users/Matt Silva/Desktop/got.html"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 55.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,650 @@
+<DOCTYPE html> 
+<html> 
+  <head>
+    <title>Seven Arts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script src="js/lib/greensock/TweenMax.min.js"></script>
+    <script src="js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
+    
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/modernizr.custom.min.js"></script>
+    <script src="js/lib/iscroll-probe.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="js/sm.js"></script>
+    <link rel="stylesheet" type="text/css" href="Font/css/bebas-neue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script type="text/javascript" src="src/basic.js"></script>  
+    
+  <style>
+    input {
+        width: 100%;
+    }
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {    
+        border: 2px solid #f5f5f5; /* Green */
+        width: 100%;
+        font-size: 18px;      
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;      
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        border: 2px solid: #45a049;
+    } 
+   .lg{
+      width: 7%;
+      float: left;
+      padding-right: 7px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-top: 10px;
+    }
+    
+    /*  seção scroll */
+  	.s2{
+  		text-align: center;
+  		margin: 20px;
+      height: 200px;
+      opacity: 0;
+      transform: translateY(70px);
+      transition: all 0.7s ease-out;
+  	}
+    .s2.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /*  seção scroll */
+  	.s3 {
+  		text-align: center;
+  		padding-bottom: : 1px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.7s ease-out;
+  	}
+    .s3.fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /*  seção scroll */
+  	.d1{
+  		background-color: #e52614;
+	    height: 455.75px;
+	    padding-top: 0px;
+	    padding-bottom: 1px;
+      padding-right: 10px;
+	    text-align: center;
+	    width: 100%;
+      display: flex;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(65px);
+      transition: all 1s ease-out;
+
+  	}
+    .d1.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  	.d1 p {
+  		color: #fff;
+  		text-align: justify;
+  		font-size: 25px;
+  	}
+  	.d2{
+  		height: 455.75px;
+	    padding-top: 1px;
+	    padding-bottom: 1px;
+	    margin: 0;
+	    background-color: #31d9fe;
+	    text-align: center;
+	    width: 100%;
+      opacity: 0;
+      transform: translateY(65px);
+      transition: all 1s ease-out;
+  	}
+    .d2.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  	.d2 p {
+  		color: #fff;
+  		text-align: justify;
+  		font-size: 25px;
+  		margin: 20px;
+    	padding: 160px;
+  	}
+  	.d3{
+  		background-color: #00e676;
+	    height: 455.75px;
+	    padding-top: 1px;
+	    padding-bottom: 0px;
+	    text-align: center;
+	    width: 100%;
+      opacity: 0;
+      transform: translateY(65px);
+      transition: all 1s ease-out;
+
+  	}
+    .d3.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  	.d3 p {
+  		color: #fff;
+  		text-align: justify;
+  		font-size: 25px;
+  		margin: 20px;
+    	padding: 160px;
+  	}
+  	#i1{
+  		float: left;
+      height: 100%;
+  		padding-right: 20px;
+  	}
+  	#i2{
+  		float: right;
+  		height: 100%;
+  		padding-left: 20px;
+  	}
+    /*  seção scroll */
+  	.s4{
+  		background-color: #f9a825;
+      text-align: center;
+      color: #fff;
+      padding: 0;
+      padding-top: 1px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(70px);
+      transition: all 1s ease-out;
+      border-width: 10px 10px 7px 10px;
+      border-bottom-color: #79aaf7;
+      border-bottom-style: solid;
+  	}
+    .s4.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /*  seção scroll */
+    .s5{
+      margin: auto;
+      text-align: center;
+      /* margin-top: 20px; */
+     
+      padding: 0;
+      opacity: 0;
+      transform: translateY(70px);
+      transition: all 1s ease-out;
+    }
+    .s5.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /*  seção scroll */
+    .box1{
+      float: left;
+      width: 33.33%;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-bottom: 70px;
+
+    }
+    .box1 img{
+      max-width: 450px;
+      width: 500px;
+      float: left;
+      padding-left: 5px;
+    }
+    .box1:hover{
+      background-color: #f8f8f8; 
+      border-radius: 5px;
+      transition: all 0.5s; 
+    }
+    .box1 p{
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .box1{
+      float: left;
+      width: 33.33%;  
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-bottom: 70px;
+    }
+    .box1 img{
+      width: 500px;
+      float: left;
+      padding-left: 5px;
+    }
+    .box1:hover{
+      background-color: #f8f8f8; 
+      border-radius: 5px;
+      transition: all 0.5s; 
+    }
+    .box1 p{
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .box{
+      float: left;
+      width: 100%;
+      padding: 20px;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-bottom: 70px;
+    }
+    .box img{
+      width: 500px;
+      float: left;
+      padding-right: 90px;
+    }
+    .box:hover{
+      background-color: #f8f8f8; 
+      border-radius: 5px;
+      transition: all 0.5s; 
+    }
+    .box p{
+      line-height: 1.5;
+      font-size: 14px;
+    }
+  	/* Final + Rodapé */
+    .news{
+      border-width: 10px 10px 3px 10px;
+      border-top-color: #79aaf7;
+      border-top-style: solid;
+      font-family: "Roboto Condensed", sans-serif; 
+      background: linear-gradient(73deg, #f4511e, #63f0ab, #f9a825, #482ba0, #2fb7c8);
+      background-size: 1000% 1000%;
+      -webkit-animation: news 31s ease infinite;
+      -moz-animation: news 31s ease infinite;
+      animation: news 31s ease infinite;
+      padding: 20px;
+      width:100%;    
+      left: 25%;
+      top: 10%;
+      color: #fff;
+      -webkit-box-shadow: -2px 2px 85px -19px rgba(0,0,0,0.55);
+      -moz-box-shadow: -2px 2px 85px -19px rgba(0,0,0,0.55);
+      box-shadow: -2px 35px 85px -19px rgba(0,0,0,0.55);
+    }
+    @-webkit-keyframes news {
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+    @-moz-keyframes news {
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+    @keyframes news { 
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+      /* Slideshow S4 */
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+      /* Slideshow container */
+    .slideshow-container {
+      max-height: 1000px;
+      position: relative;
+      margin: auto;
+      }
+
+      /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      }
+
+      /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev{
+      left: 0;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      opacity: 0.6;
+    }
+
+    /* selos slides */
+    .prev2, .next2 {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      background-color: #f4511e;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      opacity: 1;
+    }
+
+    /* selos slidest */
+    .next2 {
+      right: 0;
+    }
+    .prev2{
+      left: 0;
+    }
+
+    /* selos slidesh */
+    .prev2:hover, .next2:hover {
+      background-color: rgba(236, 91, 46, 0.78);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+    
+
+    .s6 {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    } 
+
+  </style>
+  <body>
+  	<ul id="navbar">
+     <a href="index.html"> <img class="lg" src="https://3.bp.blogspot.com/-CX8hTY7487A/WgCVDqcR8tI/AAAAAAAAg40/XZuGirGfANoa4engYauJ8AuN03c4zhvogCLcBGAs/s1600/lg.png"></a>
+      <li><a href="#l1">Home</a></li>
+      <li><a href="#p1">Artigos</a></li>
+      <li><a href="#project03">Sobre nós</a></li>
+      <li><a href="#project04">Selos</a></li>   
+    </ul>
+  	<section class="parallax">
+    <img id="l1" src="images/logo.png">
+    <div class='icon-scroll'><div/>
+  	</section>
+
+  	<section id="project01" class="s2" >
+
+
+
+	    <h1>Sobre o Seven Arts</h1>
+	    <p>Como a arte precisa ser expostas, o site, seven arts, compartilha de diversos setores criativos, existentes na midia e na vida, com o ideal de comentar e debater sobre diversos assuntos que unidos formam algo divertido, aqui você poderá ver um selo o qual mais lhe agrada, são setes selos e logo ao abaixar a pagina você poderá conhecer ele mais sobre nosso site!</p>
+  	</section>
+
+
+  	<section id="project02" class="s3">
+	  	<h1>Artigos feito por nós</h1>	
+	  	<div id="p1" class="d1">
+		  	<img id= "i1" src="images/i1.png">
+		  	<p>Nosso Hobbie sempre foi jogar, para muitos é apenas uma diversão passageira para se livrar do mundo real e ir para outro totalmente diferente, para nós, é algo muito maior, misturando a arte, a direção e a história, juntas torna o jogo uma obra de arte que deve ser apreciada, nestes artigos você irá conhecer alguns jogos, jogados por nós e o que achamos dele.</p>
+	  	</div>
+	  	
+	  	<div id="p2" class="d2">
+		  	<img id= "i2" src="images/i2.png">
+		  	<p>Da Arte de resenhar, escrever veio em conjunto. Historias criada por nós, poderão ser lidas gratuitamente, com gêneros diversos, sempre focando um pouco no mistério da vida, nossos E-Books poderão ser acessados e lidos a qualquer momento. Por tempo, estamos com poucos na seção, logo em breve nos livros digitais estarão disponíveis.</p>
+	  	</div>
+	  	<div id="p3" class="d3">
+		  	<img id= "i1" src="images/i3.png">
+		  	<p>Imaginar um cenário no qual não podemos ter pelos desenvolvedores já está no passado, atualmente vários fãs árduos que conseguem modelar e assim redenrizar seus próprios modelos e como consequência cria uma pela fanart, veja algumas das nossas fanarts!.</p>
+	  	</div>
+	  	
+  	</section>
+  	<section id="project03" class="s4">
+  		<h1>Jornada</h1>
+  		<p>Para chegar ao Seven Arts foi necessario varios blogs, com bases diferentes, mas a mesma proposta, entreterimento e leitura sobre tecnologia e jogos! Veja abaixo nossos passos até finalmente chegar na Sétima Arte.</p>
+      <!--slides -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">       
+          <img src="https://4.bp.blogspot.com/-pwJOiRamHns/VTRD2pMMy4I/AAAAAAAABC4/RGnqp8grTqU/s1600/1-3.png" style="width:100%">       
+        </div>
+        <div class="mySlides fade">      
+          <img src="https://3.bp.blogspot.com/-MnMSIMS7D0A/VTRG3MwbggI/AAAAAAAABDU/0kcgD_8pF00/s1600/1-4.png" style="width:100%">       
+        </div>
+        <div class="mySlides fade">
+          <img src="https://3.bp.blogspot.com/-PEOVXy6X8wQ/VTRD13K3-HI/AAAAAAAABCw/tJFEUPPyeMY/s1600/1-1.png" style="width:100%">
+        </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+    
+      <!--fim slide-->
+  	</section>
+  	<section id="project04" class="s5">
+  		<h1>Selos</h1>
+      <p>Conheça um pouco cada nicho do nosso site!</p> 
+      <!--Seção de Slides de Selos-->
+      <!--selos 1-->
+      <div class="slideshow-container">
+        <div class="mySlides2 fade"> 
+          <div class="box1">
+            <img src="images/selos/Writing.png">
+            <h1>Writing</h1>
+            <p>There's no faster way to learn to build responsive sites and apps with Foundation. You'll learn how to get started, Foundation's XY grid, time saving UI components and best practices, as well as using and customizing Foundation's JavaScript helpers.</p>
+            <a href="writing.html"><button class="button2">Learn More</button></a>
+          </div>
+          <div class="box1">
+            <img src="images/selos/Studio.png">
+            <h1>Studio</h1>
+            <p>Take your skills to the next level and impress your co-workers with Advanced Foundation. You'll come away with advanced XY Grid skills, how to amplify your skills using Sass, ZURB's build system to automate tasks, and advanced JavaScript customizations.</p>
+            <button class="button2">Learn More</button>
+          </div>
+          <div class="box1">
+            <img src="images/selos/Tech.png">
+            <h1>Tech</h1>
+            <p>Foundation certification shows that you understand responsive design and validates your coding skills with this public accreditation. Foundation Certification will help you become more marketable, get hired faster, and promote yourself.</p>
+            <button class="button2">Learn More</button>
+          </div>   
+        </div>  
+        <!--selos 2-->
+        <div class="mySlides2 fade" id="hid" style="display: none;">
+          <div class="box1">
+            <img src="images/selos/Photography.png">
+            <h1>Photography</h1>
+            <p>There's no faster way to learn to build responsive sites and apps with Foundation. You'll learn how to get started, Foundation's XY grid, time saving UI components and best practices, as well as using and customizing Foundation's JavaScript helpers.</p>
+            <a href="photography.html"><button class="button2">Learn More</button></a>
+          </div>
+          <div class="box1">
+            <img src="images/selos/Create.png">
+            <h1>Create</h1>
+            <p>Take your skills to the next level and impress your co-workers with Advanced Foundation. You'll come away with advanced XY Grid skills, how to amplify your skills using Sass, ZURB's build system to automate tasks, and advanced JavaScript customizations.</p>
+            <button class="button2">Learn More</button>
+          </div>
+          <div class="box1">
+            <img href="music.html" src="images/selos/Music.png">
+            <h1>Music</h1>
+            <p>Foundation certification shows that you understand responsive design and validates your coding skills with this public accreditation. Foundation Certification will help you become more marketable, get hired faster, and promote yourself.</p>
+            <a href="music.html"><button class="button2">Learn More</button></a>
+          </div>   
+        </div>  
+        <!--selos 3-->
+        <div class="mySlides2 fade" id="hid" style="display: none;">
+          <div class="box" style="">
+            <img src="images/selos/EBooks.png">
+            <h1>E-Books</h1>
+            <p>There's no faster way to learn to build responsive sites and apps with Foundation. You'll learn how to get started, Foundation's XY grid, time saving UI components and best practices, as well as using and customizing Foundation's JavaScript helpers.</p>
+            <button class="button2">Learn More</button>
+          </div>
+         </div> 
+        <!--Seção de Slides de Selos-->
+        <button class="next2" onclick="plusDivss(1)">&#10095;</button>
+        <button class="prev2" onclick="plusDivss(-1)">&#10094;</button>
+      </div>   
+  	</section>
+    <div style="clear: both"></div>
+    <section class="s7">   
+     <div class="news">   <form action="inserircontato.php" method="post">
+
+        <h1 style="left: 25%; margin-left: 5%; text-align:center; ">Vamos Conversar!</h1>    
+        <label>Nome</label>
+        <input type="text" placeholder="Digite seu nome" name="nome">
+
+        <label>Email</label>
+        <input type="text" placeholder="Digite seu email de preferência" name="email">
+
+        <label>Comentario</label>
+
+        <input type="text" placeholder="Fale o que acha do site!" name="comente">
+
+
+        <input type="submit" class="news" value="Criar Contato">
+    </form>
+     </div>
+        
+
+    </section> 
+  	<footer>
+    </footer>
+    <section class="parallax2">
+	    <h1>Seven Arts </h1>
+  	</section>
+
+
+    </body>   
+   
+  	<script type="text/javascript">
+
+
+      scrollFunction();
+          var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+
+
+      var slideIndexx = 1;
+      showDivs(slideIndex);
+
+      function plusDivss(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides2");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+  	</script>
+  </body>
+</html>
