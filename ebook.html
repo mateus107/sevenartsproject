@@ -1,0 +1,275 @@
+<DOCTYPE html> 
+<html> 
+  <head>
+    <title>Seven Arts - EBooks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script src="js/lib/greensock/TweenMax.min.js"></script>
+    <script src="js/lib/greensock/plugins/ScrollToPlugin.min.js"></script> 
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/modernizr.custom.min.js"></script>
+    <script src="js/lib/iscroll-probe.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="js/sm.js"></script>
+    <link rel="stylesheet" type="text/css" href="Font/css/bebas-neue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script type="text/javascript" src="src/basic.js"></script>  
+      <!-- Audio Player CSS & Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+  <!-- end Audio Player CSS & Scripts -->
+
+    <style>
+    body{
+        margin: 0;
+        background: #fff;
+    }
+    h1{
+        margin: auto;
+    }
+    .box{ 
+        padding: 0px;
+     }
+    .box{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    #navbar{
+        background-color: rgba(0, 188, 212, 0.85);
+    }
+    .parallax{
+        border-bottom-color: rgb(0, 188, 212);
+    }
+    .parallax2{
+        height: 300px;
+        padding-top: 70px;
+    }
+    footer{
+        border-top: 4px solid rgb(0, 188, 212);
+    }
+    .lg{
+      width: 7%;
+      float: left;
+      padding-right: 7px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-top: 10px;
+    }
+
+    .s2{
+      text-align: center;
+      margin: 20px;
+      
+      color: #000;
+      opacity: 0;
+      transform: translateY(70px);
+      transition: all 0.7s ease-out;
+      height: 1640px;
+      margin: auto;
+      padding-top: 25px;
+      background-color: #fff; 
+      background-size: cover;
+      padding-bottom: 0px;
+    }
+    .s2bg{
+    background-image: url("https://1.bp.blogspot.com/-v_UxEg93lTo/WVbd9r_qIjI/AAAAAAAATGA/Jfj6hqGiqlMYJ8yDwky3kWIdu_FwHKKqACLcBGAs/s1600/defoque.png");
+    background-size: cover;
+
+    }
+    .s2.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .box{
+      float: left;
+      width: 100%;  
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-bottom: 70px;
+
+    }
+    .box img{
+      width: 900px;
+      position: center;
+      
+    }
+    .box1{
+      min-height: 800px;
+      max-height: 800px;
+      float: left;
+      width: 50%;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      
+      color: #fff;
+       -webkit-filter: grayscale(0) blur(0);
+      filter: grayscale(0) blur(0);
+      transition: .4s ease-in-out;
+
+    }
+
+    
+    .box1:hover {
+      -webkit-filter: grayscale(60%);
+      filter: grayscale(60%);
+      transition: .4s ease-in-out;
+      transition: all 0.5s; 
+    }
+    
+    .box1 p{
+      line-height: 1.5;
+      font-size: 14px;
+      z-index: 14;
+    }
+    .box h1{
+      z-index: 14;
+    }
+    .box1 img{
+      max-width: 450px;
+      z-index: 14;
+      
+      padding-left: 5px;
+    }
+    
+    .box1 p{
+      line-height: 1.5;
+      font-size: 14px;
+      text-align: justify;
+      margin: 10px;
+      z-index: 14;
+    }
+
+    #logo{
+        transition: all 0.8s;
+        opacity: 0.9;
+
+
+    }
+    
+    #logo:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity:1;
+
+
+    }
+    .s3{
+      text-align: center;
+      margin: 10px;
+     
+      color: #000;
+      opacity: 1;
+     
+      display: none;
+    
+      padding-top: 25px;
+      background-color: #fff; 
+      background-size: cover;
+      padding-bottom: 0px;
+      text-align: justify;
+      line-height: 25px;
+      text-indent: 45px;
+      text-justify: auto;
+      text-align: justify;
+      padding: 4px 0px;
+
+    }
+    .s4{
+      text-align: center;
+      margin: 10px;
+     
+      color: #000;
+      opacity: 1;
+     
+      display: none;
+    
+      padding-top: 25px;
+      background-color: #fff; 
+      background-size: cover;
+      padding-bottom: 0px;
+      text-align: justify;
+      line-height: 25px;
+      text-indent: 45px;
+      text-justify: auto;
+      text-align: justify;
+      padding: 4px 0px;
+
+    }
+    
+   
+    </style>
+  <body>
+    <ul id="navbar" style="top: -50px;">
+     <a href="index.html"> <img class="lg" src="https://3.bp.blogspot.com/-CX8hTY7487A/WgCVDqcR8tI/AAAAAAAAg40/XZuGirGfANoa4engYauJ8AuN03c4zhvogCLcBGAs/s1600/lg.png"></a>
+      <li><a href="#l1">Home</a></li>
+      <li><a href="selos.html">Selos</a></li> 
+    </ul>
+    <section class="parallax">
+    <img id="l1" src="images/logo.png">
+    <div class='icon-scroll'><div/>
+    </section>
+
+    <section id="project01" class="s2"> 
+        <div class="box">
+            <img id="logo" src="images/selos/Ebooks.png">
+            <h1>Leia nossos Livros!</h1>
+            <p>Atualmente temos apenas dois livros onlines, mas brevemente nossa biblioteca vai se expandir! Entre no nosso universo! </p>
+        </div>  
+        <div class="box1" style="background-image: url(images/e1.png); background-size: cover; background-repeat: no-repeat; background-position: right;">
+            
+            <h1 style="padding-bottom: 10px; padding-top: 450px;">Sinopse</h1>
+            <p>Crônicas de Lyra - Roseward, conta sobre a volta de um detetive chamado Ary Holmes, que investiga sobre uma séries de assassinatos que ligam ao um possível de culto, seu retorno irá trazer revelações da cidade que nunca dorme e traumas do passado, além do misticismo que entrelaça nas sombras das ruas mais escuras de Roseward. .</p>
+            <button id="button1" class="button2">Leia Sobre</button>
+          </div>
+          <div class="box1" style="background-image: url(images/e2.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+            
+            <h1 style="padding-bottom: 10px; padding-top: 450px;">Sinopse</h1>
+            <p>Existia uma profecia na qual mostrava 12 jovens, de diferentes nações, que poderiam salvar o nosso lar quando uma grande força do mal retornasse ao mundo e provocaria o que chamavam de Sky Fall. Entretanto, essa lenda morreu junto com as civilizações, desaparecem nas tumbas dos meus antepassados, e só o destino pode comprovar se a lenda é verdadeira. O tempo está se acabando, e se esses 12 jovens de diferentes personalidades e culturas divergentes não se unirem, a escuridão irá tomar conta de todo o mundo e a raça humana irá ser extinta como todo o universo.</p>
+            <button id="button2" class="button2">Leia Sobre</button>
+          </div>
+    </section>
+    <section class="s3"> 
+      <h1> CAPITULO I - Mudanças </h1>
+      <p style="text-align:center;"><strong>I</strong></p><p style="text-align:center;"><strong>Peter Holmes</strong></p><p>Tudo começou com a criação do universo, deuses em diferentes formas, histórias e poderes criaram tudo isso, mas para alguns, somente aquele tipo de deus existe e o resto não passa de mito, mas houve uma vez, uma única vez que todos os grandes deuses tiveram que seu reunir para evitar que uma profecia ocorresse e acabasse com tudo que já haviam criado, eles não sabiam o que era apenas uma frase “A escuridão está chegando”. Os deuses chamaram isso de SkyFall.</p><p>Em uma dimensão vaga e perdida no universo os grandes deuses estavam se reunindo e temendo o que poderia acontecer em um futuro não tão distante para eles, acreditavam que apenas havia uma forma de evitar que a profecia se cumprisse, “criando” os salvadores.</p><p>Era uma enorme sala redonda e uma grande mesa com cadeiras de ouro e detalhes de diamante, havia deuses de cada cultura ali reunidos esperando uma segunda ordem e criando teorias, para de alguma forma para evitar que algo acontecesse, não havia silencio naquela enorme sala, as vozes ecoavam pelas paredes de mármore detalhadas com pinturas de deuses gregos e até mesmos egípcios. Globos de luzes mágicos flutuavam por toda mesa, por uma abertura no fim da sala haviam janelas que mostravam planetas rosados e nebulosas, um cenário um tanto surreal para mortais.</p><p>Um deus se pronuncio<strong>u</strong>, ele tinha cabelos brancos e olhos como sua túnica branca com detalhes dourados, mostrava o seu peitoral e usava um tipo de “Saia”. Deus grego que muitos conheciam, <strong>Zeus</strong>.</p><p>— Caros amigos, sabemos da consequência da profecia e não podemos ficar parados, acredito que encontraremos ainda hoje uma forma para evitar que a escuridão domine e destrua todo o universo. — Todos o observavam, se pronunciando sobre os assuntos, alguns estavam sérios e não ligavam para a regra que haviam criado a alguns bilhões de anos atrás.</p><p>A regra era clara, nenhum deus de outra cultura poderiam ser reunir ou se encontrar, isso poderia rachar o universo e criar uma fenda no tempo e no espaço, mas havia uma pequena “cláusula no contrato” onde apenas uma vez, em uma dimensão perdida, onde o tempo não passava, eles poderiam se reunir e evitar que alguma coisa acontecesse.</p><p>—Então alguma ideia? – Uma mulher se pronunciou.</p><p>—Chegamos a uma conclusão, na qual poderia levar isso até os salvadores, os escolhidos, mas não podemos simplesmente criar. — Ela pausou o que falava e olhou os para os demais. Se sentia determinada, confiante era bem provável que sempre fosse assim. — Poderia criar um paradoxo, isso seria muito pior que o SkyFall.</p><p>—Qual é o seu plano? Senhorita <strong>Kali</strong>... — Ela sorriu, viu que o grande poderoso deus grego precisou olhar em seu pergaminho mágico, apesar da aflição de todos ali, a maioria estava gostando da ideia de se reunirem, se não fosse a regra do universo poderiam deixar aquilo como um evento anual, entre um a um bilhões de anos. Sim o tempo deles é bem diferente do dos mortais. Ao lado de Zeus estava <strong>Hermes</strong> como o seu assistente do tipo, “aquele ali é o deus da cultura maia e ali é....” Ele tinha cabelos encaracolados e usava as mesmas vestes de Zeus, caso alguém observasse para seus pés iriam notas suas botas com detalhes no tornozelo de assas. A mesa se estendia a diversos metros à frente de Zeus, cada divindade estava no tamanho ideal e do mesmo jeito que os outros, não haviam nenhuma diferente de centímetro entre eles, seus poderes de ataque haviam sido tirados e nenhum estavam preocupados com isso, pois incrível que pareça acreditavam que nada poderia quebrar a aliança deles.</p><p>Kali tinha a pele meio azulada e cabelos semelhantes ao da medusa, mas não eram serpentes perigosas. Suas espadas que costumavam levar consigo não estavam lá, regras e mais regras.</p><p>—Precisamos ter certeza de que isso que pretendemos fazer chegue até o conhecimento dos mortais, mas sem criar explosões por aí.</p><p>—Seja direta, por favor.</p><p>—Conversei com a maioria dos deuses, romanos, egípcios, chineses, maias, nórdicos... enfim... — Pausou sem folego. — Esse plano foi incrivelmente criado por todos aqui presente e acho que será ótimo. — Kali parecia bem simpática, diferente de seu visual, se bem que ninguém tinha a posição de julgar ninguém naquele momento. Sua voz era de uma guerreira e no momento só tinha planos para evitar o SkyFall.</p><p>—Diga logo!</p><p>—Estrelas... Constelações — Pronunciou <strong>Rá</strong>, vestia o mesmo de sempre, roupas puxado a coloração dourado, no punho, um tipo de luva com detalhes azulados e em outra parte um formato de assas, além de ter diversos tipos de formatos relacionado ao sol. Alguns que não haviam, escutado os planos começaram a sussurrar, possivelmente pensando no que era o plano.</p><p>—Não entendi.</p><p>—Uma criação, sabemos como é a personalidade dos escolhidos, a ideia apenas é criar um tipo de estereótipo. — Rá falou sobre pedaços das profecias que mostrava características que habilidades de doze salvadores.</p><p>—Tenha cuidado com isso, apesar da personalidade deles, na profecia é deixado claro que não seguirão exatamente como proposto.</p><p>—É só uma ajudinha para conseguimos guia-los — <strong>Atena</strong> parecia bastante empolgada com aquela ideia, usava uma túnica branca que também tinha detalhes dourados com um tipo de desenhos quadrados, tinha cabelos loiros e olhos verdes.</p><p>—Afinal o que vocês estão propondo? — Um grupo de deuses, já sabendo do plano, olhavam-se como amigos de infância planejando uma viagem divertida.</p><p>—Os Signos do Zodíaco.</p><p> </p><p><em>21 de julho de 2015 – Nosso Mundo e Dimensão.</em></p><p>O sino tocou e finalmente a aula chata acabou. O garoto estava completamente entediado e se levantou para ir finalmente para casa, a sua sala parecia como uma sala de aula comum.... Ah, ele é Peter Holmes, estuda no colégio Skyac, em Manhattan. Tem 15 anos, meio pardo, cabelo loiro e olhos castanhos, um topete um tanto comum nos anos atuais, vestimenta da escola, nada de novo. Não me pergunte o porquê o nome da escola seja assim, nunca entendeu por que os pais deles o colocaram aqui, “ensino bom” disseram eles, “você vai ter futuro ali”. Estava meio entediado esse ano, mas por incrível que parece não tanto quanto os anos anteriores, existe algo acontecendo, mas não sabe o que é — <em>P</em>eter caminhava sozinho pelo corredor, quando digo “sozinho” é sem alguém para fazer companhia, havia diversas pessoas ali falando com outras e caminhando para saída da escola, os corredores eram largos e alguns armários, de cor azul, faziam um som de que precisavam de óleo. No teto apenas um branco e no chão, cerâmica xadrez. Branco e verde. Verde é o novo preto?</p><p>— <em>H</em>ey Peter! — Um garoto com cabelo meio encaracolado, pele um pouco morena e olhos castanhos claros, ele parecia um pouco sujo e com cortes nos dedos, sua voz era de um garoto extrovertido e feliz.</p><p>—Toby a diretora não precisa escutar sua voz. — Fez uma cara de “De novo isso? ” Mas depois retornou o sorriso no rosto.</p><p>—Meninos vocês não vão se matar aqui? Principalmente no último dia de aula.</p><p>—Lucy! — Lucy tinha a mesma idade que eles, Peter ficou feliz pela a presença dela e de Toby não gostava de caminhar sozinho por aquele corredor cheio de gente que não conhecia. Lucy tinha a pele branca, Toby apelidava ela de branca de neve, não somente pela cor de sua pele como o seu cabelo negro, seus olhos eram azulados como a cor do mar, vestia algumas roupas de frio que deixava seus seios ainda mais avantajados, mas não ligava para isso. Apesar de terem algumas coisas em divergência, os três compartilhavam algo que boa parte daquelas pessoas ali não tinha. Chegar no mesmo ano e dia naquela escola.</p><p>— O que faremos nas férias?</p><p>— Eu estive pensando em viajar para algum canto, isso inclui vocês. — Eles já estavam saindo da escola e Peter ficava feliz o suficiente de não precisar mais voltar lá. O ar puro do lado exterior deixava ele bastante feliz e seu bom humor retornava fazendo ele pensar o lado bom das coisas. O brilho do sol deixava os olhos da Lucy doendo um pouco por conta do interior do colégio ser escuro comparado onde ela estava, tinha feito uma careta ao sair para o exterior.</p><p>—Lucy, realmente não entendo o porquê de você está com roupas de frio sendo que estamos no verão.</p><p>—Nossa sala estava congelado hoje, você não sentiu?</p><p>—Realmente, Toby, eu praticamente dormir na aula de história.</p><p>—Não senti frio, apesar de gostar dele.</p><p>Eles caminhavam pelas ruas calmas e calorentas de Manhattan, não era muito comum fica tão calmo como aquilo, mas a zona de casas com árvores esverdeadas e as famosas cercas brancas era o que pouco prevalecia na cidade. Inclusive eram onde eles moravam.</p><p>—Está muito quente mesmo... — Toby caminhava como um zumbi e sua mochila quase caindo do seu braço, Lucy e Peter estavam normais, mas soando como se fossem um chafariz.</p><p>—Uma limonada não seria uma má ideia.</p><p>—Realmente não... —Antes de concordar com a ideia de sua amiga, algo meio estranho aconteceu, garotas começavam a gritar “Limonada!!!”, elas pareciam ser de algum grupo que arrecadava dinheiro, como aqueles grupos que Peter não lembrava por conta do calor, apenas se surpreendeu e foi até lá.</p><p>—Olá garotas, eu não vi vocês, como chegaram tão rápido aqui? — Uma menina sorriu para a Lucy, havia três.</p><p>—Você é bem bonita. — Uma disse, estava na esquerda perto de Toby que estava parado ali como se estivesse vendo um fantasma.</p><p>—É cinquenta centavos. — Disse a que estava na frente de Lucy. A mesma tirava moedas de sua bolsinha de couro.</p><p>—Ele está chegando...</p><p>—Quem está chegando? — Perguntou Peter dando o dinheiro e pegando o copo, pensava na sensação deliciosa de beber aquele suco gelado.</p><p>—A Escuridão. — O copo de Toby caiu e ele se afastou das meninas, antes dos dois tomarem a bebida, não entenderam o que estava acontecendo.</p><p>—Toby o que está acontecendo? — Peter olhou para o garoto e parecia extremamente assustado, chegou a lembrar do último filme em que eles foram ver juntos. Toby paralisou, no filme e no meio da rua.</p><p>—Vocês não estão vendo? Elas têm... três... três... — Gagueijou, a face do garoto parecia soar cada vez mais, Peter e Lucy tinha certeza de que não era somente o calor do verão.</p><p>— O que? — Peter engoliu de vez a saliva e pensou que iria se arrepender amargamente dessa pergunta. Ficou arrepiado da cabeça aos pés com a voz rouca que foi dada.</p><p>—Corram! — As três loiras empurras as garotas para longe com o vento,</p><p>—Cabeças!! — Toby falou enquanto eles voavam para trás.</p><p>—O que diabos está.... Serio? — Peter coçou os olhos e deixou o copo cair, não acreditava no que estava vendo. Seu coração e com certeza dos demais parecia sair pela boca.</p><p>As garotas, A garota, bem qualquer coisa, estava encarado os três, tinha corpo semelhante de um dragão e também tinha assas de um.</p><p>—Isso é impossível.... É uma ilusão, não é? — Perguntou Lucy para Toby.</p><p>—Parece uma criatura mitológica...</p><p>—Um Cérbero? — Perguntou Peter que não parava de observar a criatura que estava parada, como se estivesse esperando que eles corressem.</p><p>—Pode ser um...</p><p>—Pensando bem, é melhor corremos.</p><p>A criatura começou a voar sobre eles e com um ronco semelhante à de um cachorro raivoso, eles não paravam de correr, estavam muito rápidos. Toby e Peter acreditaram que as aulas de educação física com seu professor valeram a pena naquele momento.</p><p>—Crianças por que estão correndo? — Uma velha senhora perguntou para os três.</p><p>—Crianças? — Toby parou e logo Peter e Lucy também.</p><p>—Vamos logo Toby! — A criatura começou a rodeá-los.</p><p>—Minha senhora você não está vendo o bicho em cima de você? — Ela vestia roupas com estampa de flores e uma saia, prendia seus cabelos brancos com um pauzinho chinês.</p><p>— Um inseto? — Ela começou a sacudir e Lucy não pode conter o riso, apesar de estar ameaçada de morte de um <em>cão - garota loira</em> em cima deles.</p><p>— Ora seu pestinha venha cá, — Ela fuzilou o garoto pelos olhos depois de vez um sorriso sair da garota de cabelos negros, pegou a sombrinha e começou a bater nele.</p><p>— Ai! — Toby gemeu de dor, tinha batido justamente na pancada que havia levado a alguns dias.</p><p>— Isso é para não brincar com os mais velhos, eu vou embora! — A idosa batia repetidas vezes com o guarda-chuva sobre Toby que tentou usar as costas para se defender.</p><p>— Ela não está vendo a criatura?</p><p>— Gente! — Lucy chamou a atenção de Toby e do Peter que fez a pergunta, a criatura pousou logo em frente deles e fez um vento que subiu a saia da velha senhora.</p><p>— POLICIA!! — Ela gritou. O bicho grunhiu como um dragão.</p><p>Uma das patas do bicho pegou a Lucy e começou a lança-la no Ar. Peter ficou paralisado com a situação. Toby foi jogado bem longe pela calda da criatura e acabou derrubando a senhora que estava logo a sua frente fazendo ela gemer de dor.</p><p>—Eu vou devorar você! — A voz da criatura era a mesma da garota que disse corre! Lucy estava em pânico e gritando.</p><p>Algo aconteceu. Tudo ficou lento para Peter e ele começou a lembrar coisas do passado dele, seu nascimento, coincidências, possibilidades, o que é certo ou não. Algo quebrou dentro dele, e mais uma e mais uma.</p><p>—Peter? — Uma aura marrom começou a rodeá-lo ele estava de cabeça baixar e Toby não acreditava no que estava vendo de longe, a aura subiu como um raio e o chão começou a tremer.</p><p>—RÁ! — Um simples grito fez o chão se abrir e as pedras começaram a flutuar ao seu redor. — Solte... ELA! — Pedras de vários tamanhos começaram a atingir a criaturas, uma enorme bateu em uma de suas cabeças, as outras duas começaram a esquivar. Ao redor de Peter um tipo de vendaval começava a abrir o chão deixando-o com uma cratera elevada, com uma pisada no chão ele criou uma rachadura na estrada fazendo diversos carros se alarmarem. A criatura se irritou com o barulho, começou a flutuar e jorrar fogo de sua boca.</p><p>Toby começou a se segurar na senhora que estava desorientada, um tremor de terra fazia parecer a viagem que já teve no carro de seu pai que balançava mais do que o normal.</p><p>O fogo não atingia Peter, ele reergueu sua cabeça e começou a pular em cima das pedras que ele mesmo elevava, a aura marrom ficava cada vez mais alta, tão alta quando ele subia, já havia ultrapassado um arranha céu, Toby já não conseguia mas ter uma visão clara dele, apenas colocava a mão acima de seus olhos para evitar a claridade do sol e observar a criatura voando com sua amiga em uma das patas e o outro pulando a diversos metros de altura do chão, algo bem “normal” para ele, também notou que sua aura fosse um tipo de escudo, pois o dragão atacou ele um uma jorrada quando estava distraído mas foi como se fosse pó, detalhe que o distraído dele era focar seu olho para Lucy.</p><p> A cada pulo que Peter dava o chão começava a se abrir cada vez mais, em um único pulo ele conseguiu alcançar e socar a cabeça do meio que fez a criatura ir diretamente para o chão.</p><p>O impacto foi tão forte que parecia que uma bomba havia estourado no céu e a nuvens começaram a se afastar. Para Toby aquilo era como um anime, tipo Dragon Ball. A criatura caia tão rápido do alto que nesse mesmo instante ele sugou uma parte da estrada em formar circular e pegou Lucy que estava desacordada, pulo até a plataforma que começou a criar árvores e diversas flores. Quando a criatura caiu, apenas poeira e destroços começaram a voar pelo céu.</p><p>—Cof...Cof — Toby estava desacordado e ao seu redor haviam diversas flores, aparentemente ele e a senhora estavam salvos por conta daquilo. — O que diabos aconteceu... aqui... — quando ele se deu conta uma enorme cratera estava aberta ali. Diversas árvores e postes haviam caído, casas e alguns prédios também, nenhuma pessoa estava visível ali, a poeira ainda estava muito densa, parecia uma névoa. Ele estava completamente empoeirado e apenas escutava sirenes de bombeiro e a polícia. Quando viu um tipo de domo de plantas e um cabelo familiar. — Peter! — Ele iria correr até eles quando um homem o segurou. — Solte-me são os meus amigos! — Ele tentou se soltar, as plantas começaram a cair e ele viu Lucy no braço de Peter quando ele desmaiou. — Me deixe ir! — Toby estava desesperado, sua garganta estava seca, desorientado e com um sentimento de culpa estranho, ele queria ir até os amigos.</p><p>— Garoto saia daqui iremos cuidar deles!</p><p>Várias pessoas começaram a chegar por lá, a poeira ainda estava densa e diversos helicópteros sobrevoavam o local, o monstro desapareceu, Toby apagou. Uma coisa é certa, tudo aquilo que ele viu foi real, entretanto, não chegou a passar pela cabeça do jovem garoto foi, o que realmente os outros viram?</p><p><em>Algum lugar nas paredes do universo, em uma dimensão qualquer...</em></p><p>— <em>S</em>ignos do Zodíaco?</p><p>— Sim?</p><p>— Não se importa com o nome ser grego?</p><p>— Não temos mais tempo, Zeus. Apesar de nossas divergências... — A mulher que falava era <strong>Belona</strong>, ela olhou diretamente para <strong>Aries</strong>. — Precisamos nos unir.</p><p>— Entendo, por onde vocês querem começar?</p><p>— Todos começaram a lançar um sorriso.</p><p>— Estamos cientes de que os escolhidos estarão em perigo quando completarem 15 anos, sendo assim algumas habilidades extras não seria tão ruim...</p><p>— Os poderes deles irão destruir o próprio planeta, precisamos ter uma ideia.</p><p>— Ainda veremos isso... — Atena tomou a frente.</p><p>— Vamos logo cria-los... — Falou Zeus se acomodando e Hermes rapidamente foi até sua cadeira.</p><p>Um globo se formou sobre a mesa com detalhes e letras desconhecidas, a cor do globo focada era azul, mas em diversos tons de cores aleatórias, um ciclo, com o formato de cinto, formou-se diversas imagens, um carneiro, uma balança, um centauro, até mesmo um caranguejo. Em diversas dimensões, no tempo, culturas diferentes.</p><p>Aquilo era formado com apenas um objetivo, salvar todo o universo. Os escolhidos precisam salvar todos da escuridão com seus poderes e sabedoria, mas quem poderá <em>salva-los?</em></p>
+    </section>
+      <section class="s4"> 
+      <h1> CAPITULO I - Regressão </h1>
+      <p>“N<em>em sempre conseguimos prever o que está por vir. O maior mistério do ser humano é o futuro, é com ele que nos preocupamos. O que vai acontecer depois que atravessar a rua, ou até mesmo abrir uma porta?.”</em></p><p> </p><p><em>O fator surpresa é meu maior fracasso.</em> — O homem de cabelos castanhos, pele parda e marcas de luta por todo corpo, encarava o fundo preto com a visão turva, no local pouco iluminado encontrava-se uma mulher de cabelos ruivos e pele branca, os dois encaravam-se, estavam presos, frente a frente em cadeiras como reféns.</p><p> </p><p>O som agudo inundava sua mente, não conseguia ligar os pontos, os suspiros da mulher a sua frente o agonizava cada vez mais.</p><p> </p><p>— Escute… — Suspirou. — Ary!  — Os olhos do homem abriram despertando-o.</p><p>— Ei… — Ele respondeu. — Apenas… acalme-se, eu encontrarei uma forma de tirar você daqui.</p><p>— Isso… Não importa mais… — Pausava cada vez que respirava. — Apenas saiba que eu me importo com você, independente de sua origem!</p><p>— Estamos tendo essa conversa de novo… — Ele foi interrompido por um forte som de porta se abrindo. De lá saiu um homem encapuzado trazendo consigo uma lâmina afiada, a cada passo que dava cortava o vento com ela, quanto mais o homem se aproximava, mais suas mão gelavam.</p><p>— Mas que Linda cena familiar! — Ele foi direto para trá da mulher ruiva, tocou seu pescoço e lambeu seu rosto.</p><p>— SEU BASTARDO! — Ofendeu-o. — Tire as mãos de cima dela!</p><p>— Hum… Não… — Ele segurou com força o rosto da garota. Ela não tirava o olhar do homem à sua frente, de seus olhos brilhantes caiam lágrimas. — Olhe para ela <strong>Ary Wood</strong>! Veja como você fracassou em salvar aqueles que ama! Você é uma fraude. — Ary se retorceu na cadeira de tal forma que machucou seu punho e acabou caindo no chão.</p><p>— Últimas palavras… — Perguntou o encapuzado para a garota.</p><p>— Ary… Por favor.</p><p>— Diga adeus a sua irmã…</p><p>— NÃO! — Exclamou pedindo misericórdia.</p><p>…</p><p> </p><p><strong>Dias antes. </strong></p><p> </p><p>Um raio de luz passou pelas cortinas que balançavam com a brisa vinda da janela, o som de carros indo e vindo fizeram-o acordar junto ao despertador.</p><p> </p><p>Eram seis da manhã, em sua humilde cama, quarto pequeno, observou o ventilador de teto girar lentamente. Assim como seu tédio nas tardes de Domingo. Se levantou, tocou no rosto, olhou para a cômoda a sua frentecheia de livros e caminhou até o banheiro.</p><p> </p><p>— MAS QUE MERDA!! — Exclamou ao bater o seu dedo mindinho no pé da cama.</p><p> </p><p>Xingando e chorando(metaforicamente) de dor, foi em direção ao seu celular, colocou sua playlist preferida para liberar a preguiça interna. Prosseguindo a uma ducha quente, mesmo no verão de Agosto.</p><p> </p><p>Depois de se arrumar e se encarar no espelho ele pegou seu celular e escutou as mensagens recentes.</p><p> </p><p>— <em>Hey Ary! Como vai meu querido irmão cabeça dura?! —  </em>A voz doce e ao mesmo tempo ameaçadora da irmã de Ary ecoou pelo quarto, enquanto o mesmo organizava a bagunça do pequeno apartamento. — <em>Então, tô mandando essa mensagem a uma hora dessas, se bem que Dark Sky nunca dorme, você não sabe o como é curioso observar as velhinhas fofocando pela parede… Olha — </em>Suspirou. — <em>Sei que é estressante para você, depois de muito tempo voltar a ativa, mas esse periodo de ferias estava te matando! Eu fiquei muito preocupada com você. </em></p><p>— Bem o tédio ainda não foi embora… — Falou sozinho, Ary tinha esse costume.</p><p>— <em>Fico feliz por ter retornado, boa sorte com amanhã, falei com Leah hoje mais cedo, pedi pra ela te guiar novamente, acho que você deve ter esquecido como as coisas funcionam… Droga…  — </em>Ele olhou atento para o celular… — <em>Preciso ir, mas, — Parou. — Saiba que nossos pais ficariam felizes de saber que voltou a trabalhar no que gosta, eles sempre procuraram sua felicidade, chamavam você de príncipe do som! Não me pergunte sobre isso. — Riu. — Até mais Ary.  — Ele parou e encarou ao redor, encontrava-se na sala de estar próximo a televisão, um sofá, um carpete empoeirado e a porta de saída do apartamento. </em></p><p><em>— </em>Bem que você poderia estar aqui Ruby…</p><p><br /><br /></p><p>Ele partiu e foi em direção ao metrô. No caminho várias pessoas caminhavam para seu trabalho, seu objetivo de vida, ou até mesmo para algum passeio aleatório que Ary Wood não tinha noção. Roseward era agradável de se morar, tranquilo de manhã no meio da multidão e agonizante a noite. No passar das pessoas Ary lembrava seu tempo como Detetive no<strong> Departamento de Polícia de Roseward</strong>, incansáveis noites de trabalho, procurando por pistas, becos escuros e possíveis vítimas que se tornaram o próprio assassino por vingança.</p><p> </p><p>Os prédios de Roseward eram sem dúvidas a coisa mais atraente de todo o país de Lyra. Cada estado de lá tinha sua beleza. Apollo Town com seus grandes alpes nevado, que era possível ver de certos arranha-céus de Roseward. Dark Sky, a imensa floresta e as lendas locais, apesar de Ary crer que tudo isso é uma fachada para ganhar dinheiro dos turistas. Greenseed, um vilarejo focado em fazendas, a terra fértil do local é uma das principais rendas do país. Aquarius City, levou o nome pelo seu imenso Aquário e acervo de peixes, devido a ser uma área equilibrada pelo clima, existe um grande lago, mistura de floresta com pantanal que fez com que muitos empresários investissem no local, além da caça e pesca. Splendor Town e Hope City, são os únicos estados que Ary não tinha conhecimento, estranhamente não lembrava de muita coisa de lá.</p><p> </p><p>Chegou no metrô e seu trem ainda não havia chegado, passou por uma lanchonete e pediu por um café, na televisão a notícia de um assassinato misterioso envolvendo uma mulher e  o desenho de um instrumento musical chamou a atenção de Ary.</p><p> </p><p>— Toma senhor.</p><p>— Ah, desculpe. — Ele pagou para jovem mulher que trabalhava lá.</p><p>— É bem preocupante como as notícias na televisão vem piorando cada vez mais, espero que os policiais encontrem o culpado.</p><p>— Também espero.</p><p> </p><p>O homem de cabelos castanhos partiu com seu café para um vagão, sentou-se e começou a mexer no celular, colocou os fones e escutou outra mensagem de voz no meio da viagem.</p><p><br /><br /></p><p>— <em>Oi Wood, É a Leah falando, você sabe que sou eu né? — </em>Risadas<em> — Tô ligando só pra saber se você vai mesmo amanhã, fico feliz pela Ruby ter conseguido convencer você que precisava voltar, espero que não leve pro outro lado isso que vou dizer, mas sinto sua falta por aqui. — </em>Ary solta um sorriso malicioso. — <em>Está sendo um caos  ser o Sherlock Holmes de Roseward, tenho uma surpresa te esperando pra quando você chegar amanhã. Dorme bem, se não é o que está fazendo agora. </em></p><p>— <em>O que diabos Leah está guardando como surpresa? — Pensou.</em></p><p><br /><br /><br /><br /><br /></p><p>Ele chegou na estação, desceu e foi a caminho da delegacia, alguns carros permaneciam estacionados próximo a mesma, ele entrou e muitos colegas de trabalham soltaram um sorriso ao vê-lo, o local era igual a qualquer delegacia, tinha um retrato do funcionário que se destacou no mês, alguns que sempre ficavam por respeito, cada um tinha uma mini cabine particular com fotos de familiares e alguns post its.</p><p> </p><p>Ele tirou a mochila das costas e foi atendido pelo Delegado de Roseward, O senhor <strong>William Harrison</strong>.</p><p> </p><p>— Bom Dia, É bom revê-lo novamente garoto! — Will ignorou os comprimentos padrões e abraçou Ary deixando-o sem jeito, o Will já tinha 60 anos e era muito respeitado por todos. — Fico feliz por estar saudável, apesar da marca nos seus olhos de noites de sono mal dormidas que com certeza não vão sair tão cedo.  — Wood sorriu. Realmente sentia falta daquele lugar. — Venha comigo preciso te mostrar algo que vai lhe surpreender.</p><p> </p><p>Os dois entraram na sala do Delegado, dando logo de cara com um grande mural com adesivos, fios ligados e um grande espaço para teoria, De um caso que encontrava-se aberto, pelo visto, por muito tempo.</p><p> </p><p>— Isso é…</p><p>— Sim… o caso que está nos tirando do sério.</p><p> </p><p>Ele se aproximou e foi em direção ao mural, imagens nada agradáveis de se ver, uma mulher na faixa de 25 anos, morta, com o corpo esfaqueado e a barriga aberta, no fundo um símbolo de uma harpa desenhada.</p><p> </p><p>— <strong>Leah </strong>comprou esse caso e você também vai, tem um mural novo na sua sala particular Ary. — Ele virou. — Ocorreu recentemente um assassinato próximo daqui, quero que você vá até lá verificar e analisar a cena do crime.</p><p>— Claro. — Ele dirigiu-se até a porta.</p><p>— Veja garoto, esse acontecimento. — Apontou para o quadro. — Não é normal, evitamos que essas informações vazassem, ocorreram no início da semana, entretanto, alguns dos meus policiais avisaram que a cena onde você está indo é parecida com isso, os jornais conseguiram essa manchete. — Apontou para o mesmo que estava em sua mesa próximo a uma caneca de melhor pai do mundo. — Se isso for um começo de uma onda de assassinatos toda Roseward ficará em pânico, você se lembra da última vez que isso aconteceu…</p><p>— Sim. — Sua expressão facial mudou para algo mais sério, a brisa fria da janela movimentou alguns papéis, os dois ficaram em silêncio.</p><p>— Vá até lá e cuidado, estou confiando esse mistério a você.</p><p> </p><p>Ary pegou a mochila e foi em direção ao quarteirão mais próximo.</p><p> </p><p>…</p><p> </p><p>A rua fora interditada e vários repórteres encontravam-se no local, a quantidade de flashs saindo das câmeras o deixavam com labirintite.</p><p> </p><p>— Isso é um palco de horrores?</p><p>— E se não é. — <strong>Leah </strong>sorriu para Wood, a mesma o esperava em frente ao apartamento, cena do crime. Ela era alta e tinha um corpo treinado para uma briga, morena, e seu cabelo enrolado fazia um incrível black power, usava o uniforme da polícia, mas não aqueles generalizados, bem mais estiloso, seus olhos cor de mel demonstravam poder e liderança.</p><p>— Então o que é essa sua incrível surpresa? Imagino que o caso misterioso que a polícia ainda não resolveu.</p><p>— Poderia ser, mas… Ei garoto venha aqui! — Gritou para um menino na faixa dos 18 para 20 anos, branco, sardas no rosto e magro, usava uma camisa social branca, calça jeans e uma mochila atravessada, seu cabelo parecia ruivo ou era loiro, Ary não conseguia distinguir a cor devido ao tanto de flashes que saiam das câmeras, aquilo era pior que uma balada.</p><p>— Quem é esse?</p><p>— Meu nome é <strong>Jonathan</strong>… — Falou emburrado e fechou a cara.</p><p>— Essa é sua surpresa, Jonathan está estagiando no departamento de polícia, você terá que guiá-lo pro caminho certo.</p><p>— O que?! — Os dois falaram ao mesmo tempo, se olharam como se fossem latas de lixo, não queriam ficar perto um do outro de jeito nenhum.</p><p>— Pois tratem de se acostumar, Ary você já é um adulto, sabe como lidar com as pessoas.</p><p>— Não, eu não sei.</p><p>— Jonathan você quer trabalhar na polícia, precisa começar com um colega de trabalho, você mesmo me disse que adoraria trabalhar comigo.</p><p>— Exato, com você não com um homem esquisito que mata as pessoas no olhar.</p><p>— Ele tem razão.</p><p>— Olha eu to cansada dos flashs e to precisando entrar, junto com vocês como colegas de trabalho, vou jogar a real. Ary, Will me pediu pra avisar a você sobre isso, se não seguir as ordens dele está demitido, isso serve também pra tí Jonathan. — Leah falava como uma mãe com dois filhos de cinco anos de idade que não conseguiam se entender.</p><p>— Tanto faz, vamos logo.</p><p> </p><p>Leah passou na frente dos dois e pediu para Jonathan se acostumar com o que ia ver.</p><p> </p><p>A subida até o apartamento não foi muito agradável, o cheiro de mofo no ar era agonizante, o passar de policiais o tempo todo deixava tudo aquilo uma bela contra-mão.</p><p>Entraram no apartamento, o que viram não era nada agradável.</p><p> </p><p>Uma mulher, branca e ruiva, presa pelo pescoço no ventilador que girava varias e varias vezes, suas tripas balançavam conforme o objetivo acima girava, a mesma estava com a barriga aberta com o sangue escorrendo pelo corpo deixando uma grande poça no chão. Ao redor toda sala de estar bagunçada, estantes de livros caídas, tapete encharcado, marcas de luta na parede e em específico o símbolo de harpa feito com sangue.</p><p> </p><p>— Isso é…</p><p>— Nojento… — Jonathan saiu correndo para vomitar. — Ary olhou para Leah.</p><p>— Ele se acostuma, você vai ver.</p><p> </p><p>Os dois prosseguiram junto com a equipe, tirando fotos e pegando alguns materiais.</p><p> </p><p>— Então… ele caminhou observando o corpo e ao redor. Posso começar? - Perguntou Ary.</p><p>— Estou esperando.</p><p>— Pelo o que estou vendo, o assassino tentou fazer parecer o suicídio, correto?</p><p>— Não.</p><p>— Pois é, isso não é natural. As marcas de luta provam que o mesmo tentou matá-la de forma agressiva, não sorrateira, a barriga cortada é algum tipo de loucura pessoal, seja lá o que for isso. — Apontou para o símbolo. — É exatamente o que devemos nós preocupar.</p><p>— Uma seita?</p><p>— Sim, seja lá o que for, levem o corpo com cuidado para a análise. Tenho algumas dúvidas…</p><p>— Isso é extremamente cruel, seja lá como ela tenha sido morta.</p><p>— Exato… — Ele caminhou até o banheiro, na passagem encontrou livros de psicologia, drama e fantasia. Na geladeira bastante bebida. — Nossa vítima parecia ter um fascínio por melancolia.</p><p>— O nome dela é <strong>Laura Webb</strong>, primeira das três filhas de<strong> Josy Webb,</strong> estudante local, tinha poucos amigos e um ex-namorado gótico, de acordo com ele e as irmãs Josy gostava de se isolar do mundo até começar a agir estranho de uma hora para outra, de acordo com <strong>James Baker</strong>, esse foi um dos motivos para o término do namoro.</p><p>— Informações úteis, Palpites?</p><p>— Olha… — Leah foi interrompido por Jonathan.</p><p>— A pergunta é, o namorado dela tinha algum caso com as irmãs? Já pensaram que a mesma pode ter se matado por ciúmes?</p><p>— Ela foi assassinada Jonathan. — Retrucou a perita criminal.</p><p>— Isso é o que ele ou ela fez parecer.</p><p>— Independente da causa, não faz sentido ela ter se cortado na barriga, lutando consigo mesma e no meio do caminho escrever um símbolo.</p><p>— Pode ter razão chefe, mas precisamos interrogar os familiares da Josy.</p><p>— É isso que vamos fazer.</p><p>— Posso fazer isso?</p><p>— Que seja. — Ele comemorou discretamente e depois foi investigar os destroços locais.</p><p>— Ele tem potencial.</p><p>— Sim. — Ary dirigiu-se até o banheiro, abriu a porta e encontrou vários remédios no chão e na pia. — Os peritos não viram isso ainda?</p><p>— Não, estávamos esperando você, por que pergunta?</p><p>— Por isso. — Wood pegou uma luva do bolso e pegou alguns dos remédios.</p><p>— O que está tentando fazer? — Sussurrou.</p><p>— Se bem me lembro a máquina de procedimentos de Roseward é lenta demais, prefiro ir em um local mais rapido, pelo o que estou vendo, são remédios variados. — Pegou algumas cápsulas e colocou no bolso junto da luva. — Talvez o garoto tenha razão, a ordem dos eventos não batem.</p><p>— Nada está batendo. <em>Vamos lá</em>.</p>
+    </section>
+    <footer>
+    </footer>
+    <div style="clear: both"></div>
+    <section class="parallax2">
+        <h1>Seven Arts </h1>
+    </section>
+</body> 
+
+<script type="text/javascript">
+ 
+    
+$(document).ready(function(){
+  $("#button2").click(function(){
+    $(".s3").toggle(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $(".s4").toggle(1000);
+  });
+});
+ 
+
+</script>  

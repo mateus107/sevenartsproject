@@ -1,0 +1,225 @@
+<DOCTYPE html> 
+<html> 
+  <head>
+    <title>Seven Arts - Writing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script src="js/lib/greensock/TweenMax.min.js"></script>
+    <script src="js/lib/greensock/plugins/ScrollToPlugin.min.js"></script> 
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/modernizr.custom.min.js"></script>
+    <script src="js/lib/iscroll-probe.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="js/sm.js"></script>
+    <link rel="stylesheet" type="text/css" href="Font/css/bebas-neue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script type="text/javascript" src="src/basic.js"></script>  
+      <!-- Audio Player CSS & Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+  <!-- end Audio Player CSS & Scripts -->
+
+    <style>
+    body{
+        margin: 0;
+        background: #455A64;
+    }
+    h1{
+        margin: auto;
+    }
+    .box{ 
+        padding: 0px;
+     }
+    .box{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    #navbar{
+       background-color: rgba(255, 147, 0, 0.85);
+    }
+    .parallax{
+        border-bottom-color: rgb(255, 147, 0);
+    }
+    .parallax2{
+        height: 300px;
+        padding-top: 70px;
+        z-index: 10;
+    }
+    footer{
+        border-bottom-color: rgb(255, 147, 0);
+    }
+    .lg{
+      width: 7%;
+      float: left;
+      padding-right: 7px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-top: 10px;
+    }
+
+    .s2{
+      text-align: center;
+      margin: 20px;
+      height: 200px;
+      color: #000;
+      opacity: 0;
+      transform: translateY(70px);
+      transition: all 0.7s ease-out;
+      height: 2200px;
+      margin: auto;
+      
+      background-color: #fff; 
+      background-size: cover;
+      
+    }
+    .s2bg{
+    background-image: url("https://1.bp.blogspot.com/-v_UxEg93lTo/WVbd9r_qIjI/AAAAAAAATGA/Jfj6hqGiqlMYJ8yDwky3kWIdu_FwHKKqACLcBGAs/s1600/defoque.png");
+    background-size: cover;
+
+    }
+    .s2.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .box{
+      float: left;
+      width: 100%;  
+      padding-bottom: 50px;
+      padding-top: 50px;
+      background-image: url(https://1.bp.blogspot.com/-GkUBoVedQfM/Wwl0IIUzi7I/AAAAAAABF9w/qpqRXAC_b7ch6JtSW7UMsZdYT583gnR1QCLcBGAs/s1600/bg1.jpg);
+          background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;  
+      height: 800px;
+
+    }
+    .box img{
+      width: 900px;
+      position: center;
+      
+    }
+    #header{
+      background-image: url(images/t1a.jpg);
+      background-size: cover; 
+      height: 500px; 
+      background-attachment: fixed;
+      border-top: 4px solid rgb(255, 147, 0);
+      border-bottom: 4px solid rgb(255, 147, 0);
+    }
+    #header1{
+      background-image: url(images/t1a.png);
+      background-size: cover; 
+      height: 500px; 
+      background-attachment: fixed;
+      border: none; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #header1 > h1{
+      font-size: 100px; padding-top: 90px; text-align: center; color: #fff;  border: 2px solid #FFFFFF;
+      padding: 20px 90px;
+      font-weight: bold;
+      line-height: 90px;
+      display: table-caption;
+      text-transform: uppercase;
+      margin: 20px;
+    }
+    .s3{
+      text-align: justify;
+      color: #000;
+      transform: translateY(60px);
+      transition: all 0.9s ease-out;
+      margin: auto;
+      opacity: 0;
+
+
+      
+    }
+    .s3.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .s3 > p{
+      padding: 10px;
+
+    }
+
+    #logo{
+        transition: all 0.8s;
+        opacity: 0.9;
+
+
+    }
+    
+    #logo:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity:1;
+
+
+    }
+    
+   
+    </style>
+  <body>
+    <ul id="navbar" style="top: -50px;">
+     <a href="index.html"> <img class="lg" src="https://3.bp.blogspot.com/-CX8hTY7487A/WgCVDqcR8tI/AAAAAAAAg40/XZuGirGfANoa4engYauJ8AuN03c4zhvogCLcBGAs/s1600/lg.png"></a>
+      <li><a href="#l1">Home</a></li>
+      <li><a href="selos.html">Selos</a></li> 
+    </ul>
+    <section class="parallax">
+    <img id="l1" src="images/logo.png">
+    <div class='icon-scroll'><div/>
+    </section>
+
+    <section id="project01" class="s2"> 
+        <div class="box">
+            <img id="logo" src="images/selos/Tech.png">
+        </div>  
+       <div style="clear: both"></div>
+       <div id="project05" class="s3">
+        <div id="header"> 
+         <h1 style="font-size: 100px; padding-top: 40px; text-align: center; color: #fff;">Tech: ASUS lança nova motherboard com chipset Z170 </h1>
+        </div>
+         <p> A famosa linha de produtos "Republic of Gamers" (ou ROG) da ASUS recebeu um mais novo integrante - a Maximus VIII Formula, que trouxe consigo novos recursos interessantes e que definitivamente gostaríamos de ver sendo adotados por outras fabricantes num futuro próximo. O principal atrativo da Maximus VIII é um water block já incluído, fruto de uma parceria entre a ASUS e a EK - o que significa que você poderá usar um sistema de watercooling logo de fábrica; é claro, a opção de usar o tradicional aircooling ainda está disponível.  </p>
+         <div id="header1" style="background-image: url(images/t1.png);"> 
+    
+         </div>
+         <p> A Maximus VIII Formula possui o form-factor ATX e o soquete LGA 1151 - feito para os novos processadores de 6ª geração da Intel e memória DDR4. O ASUS 5-Way Optimization permite que você possa otimizar sua máquina para o máximo de performance com a melhor eficiência possível - outros recursos da série Maximus também fazem-se presentes na VIII Formula como o sistema de áudio SupremeFX 2015 da Maximus VIII Extreme. Um dos recursos mais interessantes é a iluminação LED "Aura RGB" na placa-mãe, que também inclui um conector Aura de 4 pinos para que você possa conectar ainda mais LEDs dentro do seu gabinete que o normal; o novo waterblock CrossChill EK oferece temperaturas até 23 ºC menores para o máximo de performance e eficiência em seus CPUs.   </p>
+         <p>A placa também possui suporte tanto para AMD Crossfire quanto Nvidia SLI para até duas placas de vídeo. No Brasil, não se sabe ao certo quando este componente chegará á lojas oficiais nem sua estimativa de preço. </p>
+         
+         
+       <div style="clear: both"></div>
+    </section>
+
+
+    <footer>
+    </footer>
+     <div style="clear: both"></div>
+    <section class="parallax2">
+        <h1>Seven Arts </h1>
+    </section>
+</body> 
+
+<script type="text/javascript">
+ 
+    
+
+ 
+
+</script>  

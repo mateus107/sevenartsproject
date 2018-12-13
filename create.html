@@ -1,0 +1,303 @@
+<DOCTYPE html> 
+<html> 
+  <head>
+    <title>Seven Arts - Create</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script src="js/lib/greensock/TweenMax.min.js"></script>
+    <script src="js/lib/greensock/plugins/ScrollToPlugin.min.js"></script> 
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/modernizr.custom.min.js"></script>
+    <script src="js/lib/iscroll-probe.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="js/sm.js"></script>
+    <link rel="stylesheet" type="text/css" href="Font/css/bebas-neue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script type="text/javascript" src="src/basic.js"></script>  
+      <!-- Audio Player CSS & Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+  <!-- end Audio Player CSS & Scripts -->
+
+    <style>
+    body{
+        margin: 0;
+        background: #455A64;
+    }
+    h1{
+        margin: auto;
+    }
+    .box{ 
+        padding: 0px;
+     }
+    .box{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    #navbar{
+        background-color: rgba(86, 180, 48, 0.85);
+    }
+    .parallax{
+        border-bottom-color: rgb(86, 180, 48);
+    }
+    .parallax2{
+        height: 300px;
+        padding-top: 70px;
+    }
+    footer{
+        border-top: 4px solid rgb(86, 180, 48);
+    }
+    .lg{
+      width: 7%;
+      float: left;
+      padding-right: 7px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-top: 10px;
+    }
+
+    .s2{
+      text-align: center;
+      margin: 20px;
+      height: 200px;
+      color: #000;
+      opacity: 0;
+      transform: translateY(70px);
+      transition: all 0.7s ease-out;
+      height: 1640px;
+      margin: auto;
+      padding-top: 25px;
+      background-color: #fff; 
+      background-size: cover;
+      padding-bottom: 0px;
+    }
+    .s2bg{
+    background-image: url("https://1.bp.blogspot.com/-v_UxEg93lTo/WVbd9r_qIjI/AAAAAAAATGA/Jfj6hqGiqlMYJ8yDwky3kWIdu_FwHKKqACLcBGAs/s1600/defoque.png");
+    background-size: cover;
+
+    }
+    .s2.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .box{
+      float: left;
+      width: 100%;  
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-bottom: 70px;
+
+    }
+    .box img{
+      width: 900px;
+      position: center;
+      
+    }
+    .box1{
+      min-height: 800px;
+      max-height: 800px;
+      float: left;
+      width: 33.33%;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      
+      color: #fff;
+       -webkit-filter: grayscale(0) blur(0);
+      filter: grayscale(0) blur(0);
+      transition: .4s ease-in-out;
+
+    }
+
+    
+    .box1:hover {
+      -webkit-filter: grayscale(60%);
+      filter: grayscale(60%);
+      transition: .4s ease-in-out;
+      transition: all 0.5s; 
+    }
+    
+    .box1 p{
+      line-height: 1.5;
+      font-size: 14px;
+      z-index: 14;
+    }
+    .box h1{
+      z-index: 14;
+    }
+    .box1 img{
+      max-width: 450px;
+      z-index: 14;
+      
+      padding-left: 5px;
+    }
+    
+    .box1 p{
+      line-height: 1.5;
+      font-size: 14px;
+      text-align: justify;
+      margin: 10px;
+      z-index: 14;
+    }
+
+    #logo{
+        transition: all 0.8s;
+        opacity: 0.9;
+
+
+    }
+    
+    #logo:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity:1;
+
+
+    }
+    input {
+        width: 100%;
+    }
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {    
+        border: 2px solid #f5f5f5; /* Green */
+        width: 100%;
+        font-size: 18px;      
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;      
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        border: 2px solid: #45a049;
+    } 
+    .news{
+      border-width: 10px 10px 3px 10px;
+      border-top-color: #fff;
+      border-top-style: solid;
+      font-family: "Roboto Condensed", sans-serif; 
+      background: linear-gradient(73deg, #f4511e, #63f0ab, #f9a825, #482ba0, #2fb7c8);
+      background-size: 1000% 1000%;
+      -webkit-animation: news 31s ease infinite;
+      -moz-animation: news 31s ease infinite;
+      animation: news 31s ease infinite;
+      padding: 20px;
+      width:100%;    
+      left: 25%;
+      top: 10%;
+      color: #fff;
+      -webkit-box-shadow: -2px 2px 85px -19px rgba(0,0,0,0.55);
+      -moz-box-shadow: -2px 2px 85px -19px rgba(0,0,0,0.55);
+      box-shadow: -2px 35px 85px -19px rgba(0,0,0,0.55);
+    }
+    @-webkit-keyframes news {
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+    @-moz-keyframes news {
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+    @keyframes news { 
+      0%{background-position:0% 54%}
+      50%{background-position:100% 47%}
+      100%{background-position:0% 54%}
+    }
+    
+   
+    </style>
+  <body>
+    <ul id="navbar" style="top: -50px;">
+     <a href="index.html"> <img class="lg" src="https://3.bp.blogspot.com/-CX8hTY7487A/WgCVDqcR8tI/AAAAAAAAg40/XZuGirGfANoa4engYauJ8AuN03c4zhvogCLcBGAs/s1600/lg.png"></a>
+      <li><a href="#l1">Home</a></li>
+      <li><a href="selos.html">Selos</a></li> 
+    </ul>
+    <section class="parallax">
+    <img id="l1" src="images/logo.png">
+    <div class='icon-scroll'><div/>
+    </section>
+
+    <section id="project01" class="s2"> 
+        <div class="box">
+            <img id="logo" src="images/selos/Create.png">
+            <h1>Suas criações podem estar conosco nesse site!</h1>
+            <p>quer compartilhar prints de jogos, fotos e ate resenhas do que achou de alguma obra por ai? esse é o local certo! Com o Seven Arts - Create teremos um contato maior, entre vocês e a gente! abuse e use nesse selo, estaremos esperando por seus comentarios! </p>
+        </div>  
+        <div class="box1" style="background-color: #12bcd3; background-size: cover; background-repeat: no-repeat; background-position: right;">
+            <img style="position: center;" src="images/cv1.png">
+            <h1 style="padding-top: 10px;">Games!</h1>
+            <p>Compartilhe screenshots, gameplay, como também dicas e tutoriais sobre alguma fase do seu jogo favorito, ou o qual esta jogando no momento! Postaremos logo em seguida com seu comentario, reunindo as melhores dicas e screenshots mandadas por vocês! Assim teremos uma comunidade ativa e dinâmica!</p>
+            
+          </div>
+          <div class="box1" style="background-color: #fa3c66; background-size: cover; background-repeat: no-repeat; background-position: center;">
+            <img style="position: center;" >
+            <img src="images/cv2.png">
+            <h1>Fotografias</h1>
+            <p style="padding-top: 5px; padding-bottom: 60px;">Mande fotos de paissagens e conceituais para nós! Criaremos diversos álbuns no Seven Arts - Photography, buscando assim tornar um álbum nosso e como também seu!</p>
+           
+          </div>
+          <div class="box1" style="background-color: #ff8d4f; background-size: cover; background-repeat: no-repeat; background-position: center;">
+            <img style="" src="images/cv3.png">
+            <h1 style="">Artigos</h1>
+            <p style="">Não é so o Seven Arts - Writing que tem analises e resenhas, compartilhe o que você de algum produto midiatico, seja jogo, livro ou ate musica de seu cantor ou banda preferida!</p>
+            
+          </div>         
+    </section>
+    <section class="s7">   
+     <div class="news">   <form action="inserircontato.php" method="post">
+
+        <h1 style="left: 25%; margin-left: 5%; text-align:center; ">Vamos Conversar!</h1>    
+        <label>Nome</label>
+        <input type="text" placeholder="Digite seu nome" name="nome">
+
+        <label>Email</label>
+        <input type="text" placeholder="Digite seu email de preferência" name="email">
+
+        <label>Comentario</label>
+
+        <input type="text" placeholder="Fale o que acha do site!" name="comente">
+
+
+        <input type="submit" class="news" value="Criar Contato">
+    </form>
+     </div>
+        
+
+    </section>   
+
+    <footer>
+    </footer>
+    <div style="clear: both"></div>
+    <section class="parallax2">
+        <h1>Seven Arts </h1>
+    </section>
+</body> 
+
+<script type="text/javascript">
+ 
+    
+
+ 
+
+</script>  

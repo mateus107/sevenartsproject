@@ -1,0 +1,229 @@
+<DOCTYPE html> 
+<html> 
+  <head>
+    <title>Seven Arts - Studio </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script src="js/lib/greensock/TweenMax.min.js"></script>
+    <script src="js/lib/greensock/plugins/ScrollToPlugin.min.js"></script> 
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/modernizr.custom.min.js"></script>
+    <script src="js/lib/iscroll-probe.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="js/sm.js"></script>
+    <link rel="stylesheet" type="text/css" href="Font/css/bebas-neue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script type="text/javascript" src="src/basic.js"></script>  
+      <!-- Audio Player CSS & Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+  <!-- end Audio Player CSS & Scripts -->
+
+    <style>
+    body{
+        margin: 0;
+        background: #455A64;
+    }
+    h1{
+        margin: auto;
+    }
+    .box{ 
+        padding: 0px;
+     }
+    .box{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    #navbar{
+        background-color: rgb(0, 231, 110,0.85);
+    }
+    .parallax{
+        border-bottom-color: rgb(0, 231, 110);
+    }
+    .parallax2{
+        height: 300px;
+        padding-top: 70px;
+    }
+    footer{
+        border-top: 4px solid rgb(94, 58, 171);
+    }
+    .lg{
+      width: 7%;
+      float: left;
+      padding-right: 7px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-top: 10px;
+    }
+
+    .s2{
+      text-align: center;
+      margin: 20px;
+      height: 200px;
+      color: #fff;
+      opacity: 0;
+      transform: translateY(70px);
+      transition: all 0.7s ease-out;
+      height: 2580px;
+      margin: auto;
+      background-color: #fff; 
+      background-size: cover;
+      padding-bottom: 0px;
+    }
+    .s2bg{
+    background-image: url("https://1.bp.blogspot.com/-v_UxEg93lTo/WVbd9r_qIjI/AAAAAAAATGA/Jfj6hqGiqlMYJ8yDwky3kWIdu_FwHKKqACLcBGAs/s1600/defoque.png");
+    background-size: cover;
+
+    }
+    .s2.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+      background-image: url(images/bg3.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .box{
+      float: left;
+      width: 100%;  
+      padding-bottom: 70px;
+      padding-top: 50px;
+      margin-bottom: 70px;
+
+    }
+    .box img{
+      width: 900px;
+      position: center;
+      
+    }
+    
+
+    #logo{
+        transition: all 0.8s;
+        opacity: 0.9;
+
+
+    }
+    
+    #logo:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity:1;
+
+
+    }
+    #quad { 
+    background-image: url(images/bg3.png); 
+    font-size: 0; width: 100%; 
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 12px rgba(0,0,0,0.8);
+    }
+    #quad figure { 
+      margin: 0; width: 50%; 
+      height: auto; transition: 1s; 
+      display: inline-block; 
+      position: relative; overflow: hidden; 
+    }
+    #quad figure:hover { cursor: pointer; z-index: 4; }
+    #quad figure img { width: 100%; height: auto; }
+    #quad figure:nth-child(1) { transform-origin: top left; }
+    #quad figure:nth-child(2) { transform-origin: top right; }
+    #quad figure:nth-child(3) { transform-origin: bottom left; }
+    #quad figure:nth-child(4) { transform-origin: bottom right; }
+    #quad figure figcaption { 
+      margin: 0; opacity: 0; 
+      background: rgba(0,0,0,0.3); 
+      color: #fff; padding: .3rem; 
+      font-size: 1.2rem; 
+      position: absolute; 
+      bottom: 0; width: 100%;
+      transition: 1s 1s opacity; 
+      font-family: 'Roboto', sans-serif;
+      font-weight: 200;
+      font-style: italic;
+    }
+    .expanded { transform: scale(2); z-index: 5;  }
+    #quad figure.expanded figcaption { opacity: 1; }
+    .full figure:not(.expanded) { pointer-events: none; }
+      
+   
+    </style>
+  <body>
+    <ul id="navbar" style="top: -50px;">
+     <a href="index.html"> <img class="lg" src="https://3.bp.blogspot.com/-CX8hTY7487A/WgCVDqcR8tI/AAAAAAAAg40/XZuGirGfANoa4engYauJ8AuN03c4zhvogCLcBGAs/s1600/lg.png"></a>
+      <li><a href="#l1">Home</a></li>
+      <li><a href="selos.html">Selos</a></li> 
+    </ul>
+    <section class="parallax">
+    <img id="l1" src="images/logo.png">
+    <div class='icon-scroll'><div/>
+    </section>
+
+    <section id="project01" class="s2"> 
+        <div class="box">
+            <img id="logo" src="images/selos/Studio.png">
+            <h1>Novos Mundos</h1>
+            <p style="font-style: italic;">"É necessario ir além do limite dado pelos criadores, com a criatividade e o poder de criar podemos ver novos mundos!" </p>
+            <p>Aproveite nosso Studio!</p>
+        </div>  
+        <div id="quad">
+          <figure>
+          <img src="images/simages/2.png" alt="rose-red-wine">
+          <figcaption>Slow Shot</figcaption>
+          </figure>
+          <figure>
+          <img src="images/simages/3.png" alt="rose-red-wine">
+          <figcaption>Deep Breath</figcaption>
+          </figure>
+          <figure>
+          <img src="images/simages/4.png" alt="rose-red-wine">
+          <figcaption>Dark Angel</figcaption>
+          </figure>
+          <figure>
+          <img src="images/simages/5.png" alt="rose-red-wine">
+          <figcaption>Cold Sun</figcaption>
+          </figure>
+        </div>
+        <div id="quad">
+          <figure>
+          <img src="images/simages/1.png" alt="rose-red-wine">
+          <figcaption>Athena's Watch</figcaption>
+          </figure>
+          <figure>
+          <img src="images/simages/6.png" alt="rose-red-wine">
+          <figcaption>Open The Door of Sun</figcaption>
+
+        </div>
+
+    </section>
+    <footer>
+    </footer>
+    <div style="clear: both"></div>
+    <section class="parallax2">
+        <h1>Seven Arts </h1>
+    </section>
+</body> 
+
+<script type="text/javascript">
+ var quadimages = document.querySelectorAll("#quad figure");
+  for(i=0; i<quadimages.length; i++) {
+  quadimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") }); 
+}
+    
+
+ 
+
+</script>  

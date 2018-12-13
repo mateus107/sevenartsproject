@@ -1,0 +1,224 @@
+<DOCTYPE html> 
+<html> 
+  <head>
+    <title>Seven Arts - Tech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <script src="js/lib/greensock/TweenMax.min.js"></script>
+    <script src="js/lib/greensock/plugins/ScrollToPlugin.min.js"></script> 
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/modernizr.custom.min.js"></script>
+    <script src="js/lib/iscroll-probe.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script type="text/javascript" src="js/sm.js"></script>
+    <link rel="stylesheet" type="text/css" href="Font/css/bebas-neue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script type="text/javascript" src="src/basic.js"></script>  
+      <!-- Audio Player CSS & Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+  <!-- end Audio Player CSS & Scripts -->
+
+    <style>
+    body{
+        margin: 0;
+        background: #455A64;
+    }
+    h1{
+        margin: auto;
+    }
+    .box{ 
+        padding: 0px;
+     }
+    .box{
+        font-size: 25px;
+        margin-top: 0px;
+    }
+    #navbar{
+       background-color: rgba(255, 147, 0, 0.85);
+    }
+    .parallax{
+           border-bottom-color: rgb(255, 147, 0);
+    }
+    .parallax2{
+        height: 300px;
+        padding-top: 70px;
+    }
+    footer{
+        border-top: 4px solid rgb(255, 147, 0);
+    }
+    .lg{
+      width: 7%;
+      float: left;
+      padding-right: 7px;
+      padding-left: 13px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-top: 10px;
+    }
+
+    .s2{
+      text-align: center;
+      margin: 20px;
+      height: 200px;
+      color: #000;
+      opacity: 0;
+      transform: translateY(70px);
+      transition: all 0.7s ease-out;
+      height: 1640px;
+      margin: auto;
+      padding-top: 25px;
+      background-color: #fff; 
+      background-size: cover;
+      padding-bottom: 0px;
+    }
+    .s2bg{
+    background-image: url("https://1.bp.blogspot.com/-v_UxEg93lTo/WVbd9r_qIjI/AAAAAAAATGA/Jfj6hqGiqlMYJ8yDwky3kWIdu_FwHKKqACLcBGAs/s1600/defoque.png");
+    background-size: cover;
+
+    }
+    .s2.fade-in{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .box{
+      float: left;
+      width: 100%;  
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-bottom: 70px;
+
+    }
+    .box img{
+      width: 900px;
+      position: center;
+      
+    }
+    .box1{
+      min-height: 800px;
+      max-height: 800px;
+      float: left;
+      width: 33.33%;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      
+      color: #fff;
+       -webkit-filter: grayscale(0) blur(0);
+      filter: grayscale(0) blur(0);
+      transition: .4s ease-in-out;
+
+    }
+
+    
+    .box1:hover {
+      -webkit-filter: grayscale(60%);
+      filter: grayscale(60%);
+      transition: .4s ease-in-out;
+      transition: all 0.5s; 
+    }
+    
+    .box1 p{
+      line-height: 1.5;
+      font-size: 14px;
+      z-index: 14;
+    }
+    .box h1{
+      z-index: 14;
+    }
+    .box1 img{
+      max-width: 450px;
+      z-index: 14;
+      
+      padding-left: 5px;
+    }
+    
+    .box1 p{
+      line-height: 1.5;
+      font-size: 14px;
+      text-align: justify;
+      margin: 10px;
+      z-index: 14;
+    }
+
+    #logo{
+        transition: all 0.8s;
+        opacity: 0.9;
+
+
+    }
+    
+    #logo:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity:1;
+
+
+    }
+    
+   
+    </style>
+  <body>
+    <ul id="navbar" style="top: -50px;">
+     <a href="index.html"> <img class="lg" src="https://3.bp.blogspot.com/-CX8hTY7487A/WgCVDqcR8tI/AAAAAAAAg40/XZuGirGfANoa4engYauJ8AuN03c4zhvogCLcBGAs/s1600/lg.png"></a>
+      <li><a href="#l1">Home</a></li>
+      <li><a href="selos.html">Selos</a></li> 
+    </ul>
+    <section class="parallax">
+    <img id="l1" src="images/logo.png">
+    <div class='icon-scroll'><div/>
+    </section>
+
+    <section id="project01" class="s2"> 
+        <div class="box">
+            <img id="logo" src="images/selos/Tech.png">
+            <h1>Artigos e Curiosidades sobre Tecnologia!</h1>
+           
+        </div>  
+        <div class="box1" style="background-image: url(images/t2.png); background-repeat: no-repeat; background-position: top; color: #fff; background-size: cover;" >
+            <img style="position: center; padding-top: 90;" src="http://pngimg.com/uploads/android_logo/android_logo_PNG16.png">
+            
+            <p>Android Pie ja chegou em diversos celulares e inclusive o famoso pixel, veja as mais recentes novidades do famoso sistema operacional da google!.</p>
+            <a href="w1.html"><button class="button2">Leia Sobre</button></a>
+          </div>
+          <div class="box1" style="background-image: url(images/t1.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+            <img style="position: center;" >
+            <img src="http://4.bp.blogspot.com/-KIbMFYRDb28/VS5-W7WeIlI/AAAAAAAACF0/cocD_7f7mWM/w1200-h630-p-k-no-nu/Asus-logo-vector.png">
+            
+            <p style="padding-top: 5px; padding-bottom: 60px;">A famosa linha de produtos "Republic of Gamers" (ou ROG) da ASUS recebeu um mais novo integrante - a Maximus VIII Formula, que trouxe consigo novos recursos interessantes e que definitivamente gostaríamos de ver sendo adotados por outras fabricantes num futuro próximo.</p>
+            <a href="t1.html"><button class="button2">Leia Sobre</button></a>
+          </div>
+          <div class="box1" style="background-image: url(images/t3.png); background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <img style="padding-top: 70px;" src="http://pluspng.com/img-png/nintendo-png-is-nintendo-switch-online-down-340.png">
+            
+            <p style="padding-top: 5px; padding-bottom: 35px;">Nintendo Switch vende sobrenaturalmente no Black Friday! Veja quais são os jogos mais jogados do console da Nintendo e também novidades de atualização do mesmo!</p>
+            <button class="button2">Leia Sobre</button>
+          </div>         
+     
+
+    </section>
+    <footer>
+    </footer>
+    <div style="clear: both"></div>
+    <section class="parallax2">
+        <h1>Seven Arts </h1>
+    </section>
+</body> 
+
+<script type="text/javascript">
+ 
+    
+
+ 
+
+</script>  
